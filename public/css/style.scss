@@ -1,0 +1,142 @@
+@import url("../css/reset.css");
+/*==================================================================*/
+
+$color: #FDF4B8;
+$color_hover: #fff9dc;
+$dark_color: #8C433A;
+$dark_color_hover: #8c4d47;
+$dark_color_bg: #652f29;
+
+body {
+  background: $dark_color;
+  color: $color;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+  position: relative
+}
+
+.border {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10.5%;
+}
+
+h1, h2 {
+  font-family: Playfair Display, serif;
+}
+
+h1 {
+  font-size: 102px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.p1, .p2, .p3 {
+  font-family: DM Sans, sans-serif;
+  line-height: 1.5;
+}
+
+.p1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.p2 {
+  font-size: 24px;
+}
+
+.p3 {
+  font-size: 16px;
+}
+
+.dark-text {
+  color: $dark_color;
+}
+
+/*==================================================================*/
+
+::-webkit-scrollbar {
+  width: 15px
+}
+
+::-webkit-scrollbar-track {
+  background-color: $dark_color_bg;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $dark_color;
+  border: 3px solid $dark_color_bg;
+  border-radius: 6px;
+}
+
+/*==================================================================*/
+
+.header {
+  width: 100%;
+  background-color: $dark_color;
+  z-index: 100
+}
+
+.header-border {
+  display: flex;
+  min-height: 147px;
+  margin: 0 auto;
+  padding: 5px 35px;
+  align-items: center;
+}
+
+.logo {
+  color: $color;
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 98.7%;
+  width: 155px;
+  min-width: 155px;
+  transition: color .2s;
+
+  span {
+    display: inline-block;
+    color: $dark_color;
+    -webkit-text-stroke: 1px #FDF4B8;
+    transition: all .2s;
+  }
+}
+
+.logo:hover {
+  color: $color_hover;
+
+  span {
+    color: $dark_color;
+    -webkit-text-stroke: 1px $color_hover;
+    transform: translateX(2px);
+  }
+}
+
+.dark-logo {
+  color: $dark_color;
+
+  span {
+    color: $color;
+    -webkit-text-stroke: 2px $dark_color;
+  }
+}
+
+.dark-logo:hover {
+  color: $dark_color_hover;
+
+  span {
+    color: $color;
+    -webkit-text-stroke: 2px $dark_color_hover;
+    transform: translateX(2px);
+  }
+}
+
+/*==================================================================*/

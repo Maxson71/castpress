@@ -1,0 +1,131 @@
+@import url("../css/reset.css");
+/*==================================================================*/
+body {
+  background: #8C433A;
+  color: #FDF4B8;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+  position: relative;
+}
+
+.border {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10.5%;
+}
+
+h1, h2 {
+  font-family: Playfair Display, serif;
+}
+
+h1 {
+  font-size: 102px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.p1, .p2, .p3 {
+  font-family: DM Sans, sans-serif;
+  line-height: 1.5;
+}
+
+.p1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.p2 {
+  font-size: 24px;
+}
+
+.p3 {
+  font-size: 16px;
+}
+
+.dark-text {
+  color: #8C433A;
+}
+
+/*==================================================================*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #652f29;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8C433A;
+  border: 3px solid #652f29;
+  border-radius: 6px;
+}
+
+/*==================================================================*/
+.header {
+  width: 100%;
+  background-color: #8C433A;
+  z-index: 100;
+}
+
+.header-border {
+  display: flex;
+  min-height: 147px;
+  margin: 0 auto;
+  padding: 5px 35px;
+  align-items: center;
+}
+
+.logo {
+  color: #FDF4B8;
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 98.7%;
+  width: 155px;
+  min-width: 155px;
+  transition: color 0.2s;
+}
+.logo span {
+  display: inline-block;
+  color: #8C433A;
+  -webkit-text-stroke: 1px #FDF4B8;
+  transition: all 0.2s;
+}
+
+.logo:hover {
+  color: #fff9dc;
+}
+.logo:hover span {
+  color: #8C433A;
+  -webkit-text-stroke: 1px #fff9dc;
+  transform: translateX(2px);
+}
+
+.dark-logo {
+  color: #8C433A;
+}
+.dark-logo span {
+  color: #FDF4B8;
+  -webkit-text-stroke: 2px #8C433A;
+}
+
+.dark-logo:hover {
+  color: #8c4d47;
+}
+.dark-logo:hover span {
+  color: #FDF4B8;
+  -webkit-text-stroke: 2px #8c4d47;
+  transform: translateX(2px);
+}
+
+/*==================================================================*/
+
+/*# sourceMappingURL=style.css.map */
