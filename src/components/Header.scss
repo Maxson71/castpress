@@ -2,6 +2,8 @@
 $background_color: #FFF;
 $dark_color: #222222;
 $dark_color_hover: #3b3b3b;
+$color: #555555;
+$color_hover: #818181;
 $decor_color: #EAEAEE;
 $special_color: #7247CA;
 $special_color_hover: #8e61e8;
@@ -46,25 +48,53 @@ $special_color_hover: #8e61e8;
   font-size: 12px;
 
 
-  div {
+  .menubar__button {
     cursor: pointer;
     transition: all 0.2s;
-
-    a {
-      display: inline-flex;
-      align-items: center;
-    }
 
     &:hover {
       color: $dark_color_hover;
       transform: translateY(-2px);
     }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+    }
   }
 
   #episodes {
-    .icon-simple-arrow-bottom {
+    .simple-arrow {
       font-size: 5px;
       padding: 0 8px;
+    }
+  }
+
+  .episodes-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: $background_color;
+    border: 1px solid $decor_color;
+
+    transform: translateY(56px) translateX(-20px);
+
+    text-align: center;
+    max-height: 120px;
+    min-width: 120px;
+    width: auto;
+    padding: 10px;
+    z-index: 10;
+
+    a {
+      color: $color;
+      text-decoration: none;
+      padding: 5px 0;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color_hover;
+      }
     }
   }
 

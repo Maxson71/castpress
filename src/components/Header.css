@@ -34,21 +34,44 @@
   letter-spacing: 1.92px;
   font-size: 12px;
 }
-.menubar div {
+.menubar .menubar__button {
   cursor: pointer;
   transition: all 0.2s;
 }
-.menubar div a {
-  display: inline-flex;
-  align-items: center;
-}
-.menubar div:hover {
+.menubar .menubar__button:hover {
   color: #3b3b3b;
   transform: translateY(-2px);
 }
-.menubar #episodes .icon-simple-arrow-bottom {
+.menubar .menubar__button a {
+  display: inline-flex;
+  align-items: center;
+}
+.menubar #episodes .simple-arrow {
   font-size: 5px;
   padding: 0 8px;
+}
+.menubar .episodes-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #FFF;
+  border: 1px solid #EAEAEE;
+  transform: translateY(56px) translateX(-20px);
+  text-align: center;
+  max-height: 120px;
+  min-width: 120px;
+  width: auto;
+  padding: 10px;
+  z-index: 10;
+}
+.menubar .episodes-menu a {
+  color: #555555;
+  text-decoration: none;
+  padding: 5px 0;
+  transition: all 0.2s;
+}
+.menubar .episodes-menu a:hover {
+  color: #818181;
 }
 .menubar #donate {
   color: #7247CA;
