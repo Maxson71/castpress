@@ -1,0 +1,43 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .curent-episode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 680px;
+  text-align: center;
+  padding: 96px 16px;
+}
+main .curent-episode * {
+  margin-bottom: 39px;
+}
+main .curent-episode .curent-episode__audio {
+  width: 100%;
+  background-color: #F5F5F7;
+  display: flex;
+  flex-direction: column;
+  min-width: 145px;
+  height: 10px;
+}
+main .curent-episode .curent-episode__link-title {
+  margin-bottom: 12px;
+}
+main img {
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+}
+
+@media (max-width: 767.98px) {
+  main .curent-episode {
+    padding: 48px 16px;
+  }
+}
+
+/*# sourceMappingURL=Home.css.map */

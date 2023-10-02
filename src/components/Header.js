@@ -1,4 +1,4 @@
-import './Header.css';
+import '../style/Header.css';
 import {useState} from "react";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -25,10 +25,10 @@ function Header() {
                 <a href="/" className="logo">Castpress.</a>
                 <nav className="menubar">
                     <div className="menubar__button">
-                        <a id="episodes" href="#" onClick={toggleEpisodesMenu}>
+                        <div id="episodes" onClick={toggleEpisodesMenu}>
                             EPISODES
                             <span className={isEpisodesMenuOpen ? "simple-arrow icon-simple-arrow-bottom" : "simple-arrow icon-simple-arrow-top"}></span>
-                        </a>
+                        </div>
                     </div>
                     {isEpisodesMenuOpen && (
                         <Swiper className="episodes-menu"
@@ -40,14 +40,14 @@ function Header() {
                                 mousewheel={{ invert: false , forceToAxis: true }} /* Додано налаштування прокрутки миші */
                                 freeMode={true} /* Додано для включення режиму вільної прокрутки */
                         >
-                            <SwiperSlide><a href="/episode_1">Episode 1</a></SwiperSlide>
-                            <SwiperSlide><a href="/episode_2">Episode 2</a></SwiperSlide>
-                            <SwiperSlide><a href="/episode_3">Episode 3</a></SwiperSlide>
-                            <SwiperSlide><a href="/episode_4">Episode 4</a></SwiperSlide>
-                            <SwiperSlide><a href="/episode_5">Episode 5</a></SwiperSlide>
-                            <SwiperSlide><a href="/episode_6">Episode 6</a></SwiperSlide>
-                            <SwiperSlide><a href="/episode_7">Episode 7</a></SwiperSlide>
-                            <SwiperSlide><a href="/episode_8">Episode 8</a></SwiperSlide>
+                            <SwiperSlide><a href="/episode/1">Episode 1</a></SwiperSlide>
+                            <SwiperSlide><a href="/episode/2">Episode 2</a></SwiperSlide>
+                            <SwiperSlide><a href="/episode/3">Episode 3</a></SwiperSlide>
+                            <SwiperSlide><a href="/episode/4">Episode 4</a></SwiperSlide>
+                            <SwiperSlide><a href="/episode/5">Episode 5</a></SwiperSlide>
+                            <SwiperSlide><a href="/episode/6">Episode 6</a></SwiperSlide>
+                            <SwiperSlide><a href="/episode/7">Episode 7</a></SwiperSlide>
+                            <SwiperSlide><a href="/episode/8">Episode 8</a></SwiperSlide>
                         </Swiper>
                     )}
                     <div className="menubar__button">
