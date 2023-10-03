@@ -12,29 +12,50 @@
   margin-bottom: 39px;
 }
 .curent-episode .curent-episode__audio {
-  width: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 680px;
+  margin-bottom: 39px;
   min-width: 145px;
 }
-.curent-episode .curent-episode__audio::-webkit-media-controls-panel {
-  background-color: #FFF;
+.curent-episode .curent-episode__audio > h6 {
+  color: #555555;
+  transform: translateY(5%);
 }
-.curent-episode .curent-episode__audio::-webkit-media-controls-current-time-display {
-  color: #222222;
+.curent-episode .curent-episode__audio > div {
+  cursor: pointer;
 }
-.curent-episode .curent-episode__audio::-webkit-media-controls-time-remaining-display {
-  color: #222222;
+.curent-episode .curent-episode__audio .audio-progress-bar {
+  width: 100%;
+  height: 7px;
+  background-color: #F5F5F7;
+  margin: 0 8px;
+  border-radius: 2px;
+  position: relative;
 }
-.curent-episode .curent-episode__audio::-webkit-media-controls-play-button {
-  background-image: url("../../public/icons/play-icon.svg");
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 30px;
-  height: 30px;
-  border: none;
-  outline: none;
+.curent-episode .curent-episode__audio .audio-progress-bar > div {
+  height: 100%;
+  border-radius: 2px;
+  background-color: #222222;
+}
+.curent-episode .curent-episode__audio .audio-play-button {
+  margin-right: 12px;
+  width: 14px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+.curent-episode .curent-episode__audio .audio-volume-button {
+  margin: 0 12px;
+}
+.curent-episode .curent-episode__audio .audio-button__image {
+  width: 16px;
+  height: 16px;
 }
 .curent-episode .curent-episode__link-title {
   margin-bottom: 12px;
