@@ -1,0 +1,55 @@
+.curent-episode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 680px;
+  text-align: center;
+  padding: 96px 16px;
+}
+.curent-episode > * {
+  margin-bottom: 39px;
+}
+.curent-episode .curent-episode__audio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: 145px;
+}
+.curent-episode .curent-episode__audio::-webkit-media-controls-panel {
+  background-color: #FFF;
+}
+.curent-episode .curent-episode__audio::-webkit-media-controls-current-time-display {
+  color: #222222;
+}
+.curent-episode .curent-episode__audio::-webkit-media-controls-time-remaining-display {
+  color: #222222;
+}
+.curent-episode .curent-episode__audio::-webkit-media-controls-play-button {
+  background-image: url("../../public/icons/play-icon.svg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+.curent-episode .curent-episode__link-title {
+  margin-bottom: 12px;
+}
+
+.curent-episode__image {
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+}
+
+@media (max-width: 767.98px) {
+  .curent-episode {
+    padding: 48px 16px;
+  }
+}
+
+/*# sourceMappingURL=AudioPlayer.css.map */

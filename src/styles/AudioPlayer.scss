@@ -1,0 +1,62 @@
+$dark_color: #222222;
+$dark_color_hover: #3b3b3b;
+$special_background_color: #F5F5F7;
+$background_color: #FFF;
+
+.curent-episode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 680px;
+  text-align: center;
+  padding: 96px 16px ;
+  > * {
+    margin-bottom: 39px;
+  }
+
+  .curent-episode__audio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 145px;
+
+    &::-webkit-media-controls-panel{
+      background-color: $background_color;
+    }
+    &::-webkit-media-controls-current-time-display{
+      color: $dark_color;
+    }
+    &::-webkit-media-controls-time-remaining-display{
+      color: $dark_color;
+    }
+    // set play button icon '../public/img/play-icon.svg'
+    &::-webkit-media-controls-play-button{
+      background-image: url('../../public/icons/play-icon.svg');
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 30px;
+      height: 30px;
+      border: none;
+      outline: none;
+    }
+  }
+
+  .curent-episode__link-title {
+    margin-bottom: 12px;
+  }
+}
+
+.curent-episode__image {
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+}
+
+@media (max-width: 767.98px) {
+  .curent-episode {
+    padding: 48px 16px;
+  }
+}

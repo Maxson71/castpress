@@ -1,4 +1,4 @@
-import '../style/Header.css';
+import '../styles/Header.css';
 import {useState} from "react";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
