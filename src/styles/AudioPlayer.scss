@@ -35,18 +35,54 @@ $background_color: #FFF;
       cursor: pointer;
     }
 
-    .audio-progress-bar {
-      width: 100%;
-      height: 7px;
-      background-color: $special_background_color;
+    .audio-progress-bar{
       margin: 0 8px;
-      border-radius: 2px;
+      width: 100%;
       position: relative;
 
-      > div {
-        height: 100%;
+      input[type="range"]{
+        appearance: none;
+        width: 100%;
         border-radius: 2px;
-        background-color: $dark_color;
+        height: 7px;
+        cursor: pointer;
+        background: $special_background_color;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0;
+          height: 7px;
+          width: 0;
+          border-radius: 2px;
+          background: $color;
+          transition: width 0.5s ease-in-out;
+        }
+
+        &::-webkit-slider-runnable-track {
+          height: 7px;
+          border-radius: 2px;
+          background: $special_background_color;
+        }
+
+        &::-webkit-slider-thumb {
+          appearance: none;
+          border: none;
+          height: 0;
+          width: 0;
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        &:focus::-webkit-slider-runnable-track {
+          height: 7px;
+          border-radius: 2px;
+          background: $special_background_color;
+        }
       }
     }
 

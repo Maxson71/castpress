@@ -54,15 +54,6 @@ function AudioPlayer() {
         return `${minutes}:${seconds}`;
     };
 
-    const onProgressClick = (e) => {
-        const { offsetWidth } = e.target;
-        const clickX = e.nativeEvent.offsetX;
-        const duration = audioRef.current.duration;
-        const newTime = (clickX / offsetWidth) * duration;
-        audioRef.current.currentTime = newTime;
-        setCurrentTime(newTime);
-    };
-
     return (
         <div className="curent-episode">
             <img src={curent__image} alt="" className="curent-episode__image"/>
@@ -72,10 +63,18 @@ function AudioPlayer() {
                     <img className="audio-button__image" src={isPlaying ? play__icon : pause__icon} alt="Play/Pause" />
                 </div>
                 <h6 className="audio-curent-time">{formatTime(currentTime)}</h6>
-                <div className="audio-progress-bar"
-                     onClick={onProgressClick}
-                >
-                    <div style={{ width: `${(currentTime / duration) * 100}%` }}></div>
+                <div className="audio-progress-bar">
+                    <input
+                        type="range"
+                        min="0"
+                        max={Math.floor(duration)}
+                        value={currentTime}
+                        onChange={(e) => {
+                            const newTime = e.target.value;
+                            audioRef.current.currentTime = newTime;
+                            setCurrentTime(newTime);
+                        }}
+                    />
                 </div>
                 <h6 className="audio-full-time">{formatTime(duration)}</h6>
                 <div className="audio-volume-button">
