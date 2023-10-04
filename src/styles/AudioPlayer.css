@@ -1,4 +1,4 @@
-.curent-episode {
+.current-episode {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,10 +8,15 @@
   text-align: center;
   padding: 96px 16px;
 }
-.curent-episode > * {
+.current-episode > * {
   margin-bottom: 39px;
 }
-.curent-episode .curent-episode__audio {
+.current-episode .current-episode__image {
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+}
+.current-episode .current-episode__audio {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,81 +25,11 @@
   margin-bottom: 39px;
   min-width: 145px;
 }
-.curent-episode .curent-episode__audio > h6 {
+.current-episode .current-episode__audio > h6 {
   color: #555555;
   transform: translateY(8%);
 }
-.curent-episode .curent-episode__audio .audio-progress-bar {
-  margin: 0 8px;
-  width: 100%;
-  position: relative;
-}
-.curent-episode .curent-episode__audio .audio-progress-bar input[type=range] {
-  appearance: none;
-  width: 100%;
-  border-radius: 2px;
-  height: 7px;
-  cursor: pointer;
-  background: #F5F5F7;
-}
-.curent-episode .curent-episode__audio .audio-progress-bar input[type=range]::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  height: 7px;
-  width: var(--progress-width, 0);
-  border-radius: 2px;
-  background: #222222;
-}
-.curent-episode .curent-episode__audio .audio-progress-bar input[type=range]::-webkit-slider-runnable-track {
-  height: 7px;
-  border-radius: 2px;
-  background: #F5F5F7;
-}
-.curent-episode .curent-episode__audio .audio-progress-bar input[type=range]::-webkit-slider-thumb {
-  appearance: none;
-  border: none;
-  height: 0;
-  width: 0;
-}
-.curent-episode .curent-episode__audio .audio-progress-bar input[type=range]::-moz-range-thumb {
-  appearance: none;
-  border: none;
-  height: 0;
-  width: 0;
-}
-.curent-episode .curent-episode__audio .audio-progress-bar input[type=range]::-ms-thumb {
-  appearance: none;
-  border: none;
-  height: 0;
-  width: 0;
-}
-.curent-episode .curent-episode__audio .audio-progress-bar input[type=range]:focus {
-  outline: none;
-}
-.curent-episode .curent-episode__audio .audio-progress-bar input[type=range]:focus::-webkit-slider-runnable-track {
-  height: 7px;
-  border-radius: 2px;
-  background: #F5F5F7;
-}
-.curent-episode .curent-episode__audio .audio-progress-bar input[type=range]:focus::-moz-range-track {
-  height: 7px;
-  border-radius: 2px;
-  background: #F5F5F7;
-}
-.curent-episode .curent-episode__audio .audio-progress-bar input[type=range]:focus::-ms-fill-lower {
-  height: 7px;
-  border-radius: 2px;
-  background: #F5F5F7;
-}
-.curent-episode .curent-episode__audio .audio-progress-bar input[type=range]:focus::-ms-fill-upper {
-  height: 7px;
-  border-radius: 2px;
-  background: #F5F5F7;
-}
-.curent-episode .curent-episode__audio .audio-play-button {
+.current-episode .current-episode__audio .audio-play-button {
   margin-right: 12px;
   width: 14px;
   height: 16px;
@@ -104,25 +39,145 @@
   cursor: pointer;
   transition: background-color 0.5s ease-in-out;
 }
-.curent-episode .curent-episode__audio .audio-volume-button {
-  margin: 0 12px;
+.current-episode .current-episode__audio .audio-progress-bar {
+  margin: 0 8px;
+  width: 100%;
+  position: relative;
 }
-.curent-episode .curent-episode__audio .audio-button__image {
+.current-episode .current-episode__audio .audio-progress-bar input[type=range] {
+  width: 100%;
+}
+.current-episode .current-episode__audio .audio-volume-button {
+  margin-left: 12px;
+  cursor: pointer;
+}
+.current-episode .current-episode__audio .volume-progress-bar {
+  margin: 0 8px;
+  width: 100%;
+  max-width: 100px;
+  position: relative;
+}
+.current-episode .current-episode__audio .volume-progress-bar input[type=range] {
+  width: 100%;
+}
+.current-episode .current-episode__audio .volume-open {
+  width: 100%;
+  transition: width 1s;
+}
+.current-episode .current-episode__audio .volume-close {
+  width: 0;
+  transition: width 0.3s;
+}
+.current-episode .current-episode__audio .audio-download-button {
+  cursor: pointer;
+}
+.current-episode .current-episode__audio .audio-button__image {
   width: 16px;
   height: 16px;
 }
-.curent-episode .curent-episode__link-title {
+.current-episode .current-episode__link-title {
   margin-bottom: 12px;
 }
+.current-episode .current-episode__link {
+  width: 130px;
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: space-between;
+}
+.current-episode .current-episode__link > a {
+  font-size: 24px;
+  color: #222222;
+  transition: color 0.5s ease-in-out;
+}
+.current-episode .current-episode__link > a:hover {
+  color: #3b3b3b;
+}
 
-.curent-episode__image {
-  width: 180px;
-  height: 180px;
-  border-radius: 4px;
+.audio-progress-bar__input,
+.volume-progress-bar__input {
+  appearance: none;
+  border-radius: 2px;
+  height: 7px;
+  cursor: pointer;
+  background: #F5F5F7;
+}
+.audio-progress-bar__input::before,
+.volume-progress-bar__input::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 7px;
+  border-radius: 2px;
+  background: #222222;
+}
+.audio-progress-bar__input::-webkit-slider-runnable-track,
+.volume-progress-bar__input::-webkit-slider-runnable-track {
+  height: 7px;
+  border-radius: 2px;
+  background: #F5F5F7;
+}
+.audio-progress-bar__input::-webkit-slider-thumb,
+.volume-progress-bar__input::-webkit-slider-thumb {
+  appearance: none;
+  border: none;
+  height: 0;
+  width: 0;
+}
+.audio-progress-bar__input::-moz-range-thumb,
+.volume-progress-bar__input::-moz-range-thumb {
+  appearance: none;
+  border: none;
+  height: 0;
+  width: 0;
+}
+.audio-progress-bar__input::-ms-thumb,
+.volume-progress-bar__input::-ms-thumb {
+  appearance: none;
+  border: none;
+  height: 0;
+  width: 0;
+}
+.audio-progress-bar__input:focus,
+.volume-progress-bar__input:focus {
+  outline: none;
+}
+.audio-progress-bar__input:focus::-webkit-slider-runnable-track,
+.volume-progress-bar__input:focus::-webkit-slider-runnable-track {
+  height: 7px;
+  border-radius: 2px;
+  background: #F5F5F7;
+}
+.audio-progress-bar__input:focus::-moz-range-track,
+.volume-progress-bar__input:focus::-moz-range-track {
+  height: 7px;
+  border-radius: 2px;
+  background: #F5F5F7;
+}
+.audio-progress-bar__input:focus::-ms-fill-lower,
+.volume-progress-bar__input:focus::-ms-fill-lower {
+  height: 7px;
+  border-radius: 2px;
+  background: #F5F5F7;
+}
+.audio-progress-bar__input:focus::-ms-fill-upper,
+.volume-progress-bar__input:focus::-ms-fill-upper {
+  height: 7px;
+  border-radius: 2px;
+  background: #F5F5F7;
+}
+
+.audio-progress-bar__input::before {
+  width: var(--progress-audio-width, 0);
+}
+
+.volume-progress-bar__input::before {
+  width: var(--progress-volume-width, 0);
 }
 
 @media (max-width: 767.98px) {
-  .curent-episode {
+  .current-episode {
     padding: 48px 16px;
   }
 }
