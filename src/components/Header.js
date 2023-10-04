@@ -37,8 +37,8 @@ function Header() {
                                 spaceBetween={8}
                                 slidesPerView={3.8}
                                 scrollbar={{ draggable: true }}
-                                mousewheel={{ invert: false , forceToAxis: true }} /* Додано налаштування прокрутки миші */
-                                freeMode={true} /* Додано для включення режиму вільної прокрутки */
+                                mousewheel={{ invert: false , forceToAxis: true }}
+                                freeMode={true}
                         >
                             <SwiperSlide><a href="/episode/1">Episode 1</a></SwiperSlide>
                             <SwiperSlide><a href="/episode/2">Episode 2</a></SwiperSlide>
