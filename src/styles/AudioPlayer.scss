@@ -28,11 +28,7 @@ $background_color: #FFF;
 
     > h6 {
       color: $color;
-      transform: translateY(5%)
-    }
-
-    > div {
-      cursor: pointer;
+      transform: translateY(8%)
     }
 
     .audio-progress-bar{
@@ -55,10 +51,9 @@ $background_color: #FFF;
           transform: translateY(-50%);
           left: 0;
           height: 7px;
-          width: 0;
+          width: var(--progress-width, 0);
           border-radius: 2px;
-          background: $color;
-          transition: width 0.5s ease-in-out;
+          background: $dark_color;
         }
 
         &::-webkit-slider-runnable-track {
@@ -67,7 +62,21 @@ $background_color: #FFF;
           background: $special_background_color;
         }
 
-        &::-webkit-slider-thumb {
+        &::-webkit-slider-thumb{
+          appearance: none;
+          border: none;
+          height: 0;
+          width: 0;
+        }
+
+        &::-moz-range-thumb{
+          appearance: none;
+          border: none;
+          height: 0;
+          width: 0;
+        }
+
+        &::-ms-thumb {
           appearance: none;
           border: none;
           height: 0;
@@ -78,11 +87,27 @@ $background_color: #FFF;
           outline: none;
         }
 
-        &:focus::-webkit-slider-runnable-track {
+        &:focus::-webkit-slider-runnable-track{
           height: 7px;
           border-radius: 2px;
           background: $special_background_color;
         }
+        &:focus::-moz-range-track{
+          height: 7px;
+          border-radius: 2px;
+          background: $special_background_color;
+        }
+        &:focus::-ms-fill-lower{
+          height: 7px;
+          border-radius: 2px;
+          background: $special_background_color;
+        }
+        &:focus::-ms-fill-upper {
+          height: 7px;
+          border-radius: 2px;
+          background: $special_background_color;
+        }
+
       }
     }
 

@@ -16,7 +16,7 @@ function AudioPlayer() {
     const [currentTime, setCurrentTime] = useState(0);
     const [duration, setDuration] = useState(0);
     const audioRef = useRef(null);
-
+    let progressBarWidth = `${(currentTime / duration) * 100}%`;
 
     useEffect(() => {
         const onLoadedMetadata = () => {
@@ -74,6 +74,7 @@ function AudioPlayer() {
                             audioRef.current.currentTime = newTime;
                             setCurrentTime(newTime);
                         }}
+                        style={{ '--progress-width': progressBarWidth }}
                     />
                 </div>
                 <h6 className="audio-full-time">{formatTime(duration)}</h6>
