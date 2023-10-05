@@ -4,7 +4,7 @@ import AudioPlayer from "../components/AudioPlayer";
 
 function Home() {
     return (
-        <main className="home-page">
+        <main className="home-page border">
             <AudioPlayer/>
         </main>
     );
