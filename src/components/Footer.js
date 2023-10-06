@@ -16,6 +16,7 @@ function Footer() {
                     <h5  className="email-form__description">Sign up now; get closer to our action.</h5>
                     <div className="email-form__form">
                         <input type="email" placeholder="Email  adress..." />
+                        <div className="email-form__button icon-arrow-right"></div>
                     </div>
                 </div>
             </div>
