@@ -8,6 +8,7 @@ import './styles/icons-font.css';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Blog from "./pages/Blog";
 import Home from "./pages/Home";
 import Episode from "./pages/Episode";
@@ -27,5 +28,6 @@ root.render(
                 <Route path="/donate" element={<Donate />}/>
             </Routes>
         </Router>
+        <Footer />
     </>
 );

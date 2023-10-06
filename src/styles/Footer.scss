@@ -1,0 +1,131 @@
+$background_color: #FFF;
+$dark_color: #222222;
+$dark_color_hover: #3b3b3b;
+$color: #555555;
+$color_hover: #818181;
+$decor_color: #EAEAEE;
+$special_background_color: #F5F5F7;
+$special_color: #7247CA;
+$special_color_hover: #8e61e8;
+
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 46px;
+
+  .decor {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: $decor_color;
+  }
+
+  .footer__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 64px 0;
+
+    .footer__menu {
+      display: flex;
+      flex-direction: column;
+      padding: -6px 0 ;
+      > a {
+        padding: 6px 0 ;
+        > * {
+          font-weight: 600;
+          line-height: 1.8;
+          color: $color;
+        }
+      }
+    }
+
+    .email-form {
+      max-width: 315px;
+      width: 100%;
+
+      .email-form__title {
+        color: $dark_color;
+        font-weight: 600;
+        letter-spacing: 2.56px;
+        text-transform: uppercase;
+        padding-bottom: 8px;
+      }
+      .email-form__description {
+        color: $color;
+        padding-bottom: 14px;
+      }
+      .email-form__form {
+
+        max-width: 315px;
+        width: 100%;
+        height: 42px;
+        border-radius: 4px;
+        background-color: $special_background_color;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        > input[type="email"] {
+          font-size: 12px;
+          padding: 14px;
+
+          max-width: 274px;
+          width: 100%;
+          height: 42px;
+
+          border-radius: 4px;
+          background-color: $special_background_color;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .email-form__button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 36px;
+          height: 36px;
+          border-radius: 4px;
+          background-color: $special_color;
+          color: $background_color;
+          font-size: 10px;
+          margin: 3px;
+          transition: background-color 0.5s ease-in-out;
+          &:hover {
+              background-color: $special_color_hover;
+          }
+        }
+      }
+    }
+
+  }
+
+  .privacy-policy {
+    padding-bottom: 24px;
+  }
+
+  .social-link {
+    width: 94px;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: space-between;
+    > a {
+      font-size: 16px;
+
+      color: $dark_color;
+      transition: color 0.5s ease-in-out;
+      &:hover {
+        color: $dark_color_hover;
+      }
+    }
+  }
+}

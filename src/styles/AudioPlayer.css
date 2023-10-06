@@ -4,9 +4,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 680px;
   text-align: center;
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 .current-episode > * {
   margin-bottom: 39px;
@@ -21,7 +20,6 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 680px;
   margin-bottom: 39px;
   min-width: 145px;
 }
@@ -178,7 +176,7 @@
 
 @media (max-width: 767.98px) {
   .current-episode {
-    padding: 48px 16px;
+    padding: 48px 0;
   }
 }
 
