@@ -21,11 +21,11 @@ root.render(
         <Header />
         <Router>
             <Routes>
-                <Route path="/" element={<Home />}/>
-                <Route path="/episode" element={<Episode />}/>
-                <Route path="/blog" element={<Blog />}/>
-                <Route path="/contact" element={<Contact />}/>
-                <Route path="/donate" element={<Donate />}/>
+                <Route path={process.env.PUBLIC_URL+"/"} element={<Home />}/>
+                <Route path={process.env.PUBLIC_URL+"/episode"} element={<Episode />}/>
+                <Route path={process.env.PUBLIC_URL+"/blog"} element={<Blog />}/>
+                <Route path={process.env.PUBLIC_URL+"/contact"} element={<Contact />}/>
+                <Route path={process.env.PUBLIC_URL+"/donate"} element={<Donate />}/>
             </Routes>
         </Router>
         <Footer />
