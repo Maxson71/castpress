@@ -2,15 +2,15 @@ import React, {useState, useRef, useEffect} from 'react';
 
 import '../styles/AudioPlayer.css';
 
-const download__icon = "../castpress/icons/download-icon.jpg"
-const play__icon = "../castpress/icons/play-icon.jpg"
-const pause__icon = "../castpress/icons/pause-icon.jpg"
-const volume__icon = "../castpress/icons/volume-icon.jpg"
-const volume_off__icon = "../castpress/icons/volume-off-icon.jpg"
+const download__icon = `${process.env.PUBLIC_URL}/icons/download-icon.jpg`
+const play__icon = `${process.env.PUBLIC_URL}./icons/play-icon.jpg`
+const pause__icon = `${process.env.PUBLIC_URL}./icons/pause-icon.jpg`
+const volume__icon = `${process.env.PUBLIC_URL}./icons/volume-icon.jpg`
+const volume_off__icon = `${process.env.PUBLIC_URL}./icons/volume-off-icon.jpg`
 
 const current__episode = "How to rapidly test any experience!"
-const current__image = "../castpress/img/current-episode.jpg"
-const current__audio = "../castpress/audio/file_example_MP3_5MG.mp3"
+const current__image = `${process.env.PUBLIC_URL}./img/current-episode.jpg`
+const current__audio = `${process.env.PUBLIC_URL}./audio/file_example_MP3_5MG.mp3`
 
 function AudioPlayer() {
 

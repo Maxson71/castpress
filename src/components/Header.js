@@ -22,7 +22,7 @@ function Header() {
     return (
         <header className="header">
             <div className="header-border">
-                <a href="/castpress/" className="logo">Castpress.</a>
+                <a href={process.env.PUBLIC_URL+"/"} className="logo">Castpress.</a>
                 <nav className="menubar">
                     <div className="menubar__button">
                         <div id="episodes" onClick={toggleEpisodesMenu}>
@@ -51,13 +51,13 @@ function Header() {
                         </Swiper>
                     )}
                     <div className="menubar__button">
-                        <a href="/castpress/blog">
+                        <a href={process.env.PUBLIC_URL+"/blog"}>
                             BLOG
                         </a>
                     </div>
-                    <div className="menubar__button"><a href="/castpress/contact">CONTACT</a></div>
+                    <div className="menubar__button"><a href={process.env.PUBLIC_URL+"/contact"}>CONTACT</a></div>
                     <div className="menubar__button">
-                        <a id="donate" href="/castpress/donate"
+                        <a id="donate" href={process.env.PUBLIC_URL+"/donate"}
                            onMouseEnter={handleDonateHover}
                            onMouseLeave={handleDonateLeave}
                         >
