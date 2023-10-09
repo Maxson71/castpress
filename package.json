@@ -1,7 +1,7 @@
 {
   "name": "castpress",
   "version": "0.1.0",
-  "homepage": "https://maxson71.github.io/CastPress/",
+  "homepage": "https://maxson71.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
