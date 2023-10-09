@@ -22,7 +22,7 @@ function Header() {
     return (
         <header className="header">
             <div className="header-border">
-                <a href="/" className="logo">Castpress.</a>
+                <a href="/castpress/" className="logo">Castpress.</a>
                 <nav className="menubar">
                     <div className="menubar__button">
                         <div id="episodes" onClick={toggleEpisodesMenu}>
@@ -40,24 +40,24 @@ function Header() {
                                 mousewheel={{ invert: false , forceToAxis: true }}
                                 freeMode={true}
                         >
-                            <SwiperSlide><a href="/episode/1">Episode 1</a></SwiperSlide>
-                            <SwiperSlide><a href="/episode/2">Episode 2</a></SwiperSlide>
-                            <SwiperSlide><a href="/episode/3">Episode 3</a></SwiperSlide>
-                            <SwiperSlide><a href="/episode/4">Episode 4</a></SwiperSlide>
-                            <SwiperSlide><a href="/episode/5">Episode 5</a></SwiperSlide>
-                            <SwiperSlide><a href="/episode/6">Episode 6</a></SwiperSlide>
-                            <SwiperSlide><a href="/episode/7">Episode 7</a></SwiperSlide>
-                            <SwiperSlide><a href="/episode/8">Episode 8</a></SwiperSlide>
+                            <SwiperSlide><a href="/castpress/episode/1">Episode 1</a></SwiperSlide>
+                            <SwiperSlide><a href="/castpress/episode/2">Episode 2</a></SwiperSlide>
+                            <SwiperSlide><a href="/castpress/episode/3">Episode 3</a></SwiperSlide>
+                            <SwiperSlide><a href="/castpress/episode/4">Episode 4</a></SwiperSlide>
+                            <SwiperSlide><a href="/castpress/episode/5">Episode 5</a></SwiperSlide>
+                            <SwiperSlide><a href="/castpress/episode/6">Episode 6</a></SwiperSlide>
+                            <SwiperSlide><a href="/castpress/episode/7">Episode 7</a></SwiperSlide>
+                            <SwiperSlide><a href="/castpress/episode/8">Episode 8</a></SwiperSlide>
                         </Swiper>
                     )}
                     <div className="menubar__button">
-                        <a href="/blog">
+                        <a href="/castpress/blog">
                             BLOG
                         </a>
                     </div>
-                    <div className="menubar__button"><a href="/contact">CONTACT</a></div>
+                    <div className="menubar__button"><a href="/castpress/contact">CONTACT</a></div>
                     <div className="menubar__button">
-                        <a id="donate" href="/donate"
+                        <a id="donate" href="/castpress/donate"
                            onMouseEnter={handleDonateHover}
                            onMouseLeave={handleDonateLeave}
                         >

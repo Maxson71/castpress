@@ -21,11 +21,11 @@ root.render(
         <Header />
         <Router>
             <Routes>
-                <Route path="/" element={<Home />}/>
-                <Route path="/episode" element={<Episode />}/>
-                <Route path="/blog" element={<Blog />}/>
-                <Route path="/contact" element={<Contact />}/>
-                <Route path="/donate" element={<Donate />}/>
+                <Route path="/castpress/" element={<Home />}/>
+                <Route path="/castpress/episode" element={<Episode />}/>
+                <Route path="/castpress/blog" element={<Blog />}/>
+                <Route path="/castpress/contact" element={<Contact />}/>
+                <Route path="/castpress/donate" element={<Donate />}/>
             </Routes>
         </Router>
         <Footer />

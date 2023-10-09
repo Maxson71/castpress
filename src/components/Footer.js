@@ -6,10 +6,10 @@ function Footer() {
             <span className="decor"></span>
             <div className="footer__content">
                 <nav className="footer__menu">
-                    <a href="/episodes"><h5>Episodes</h5></a>
-                    <a href="/blog"><h5>Blog</h5></a>
-                    <a href="/contact"><h5>Contact</h5></a>
-                    <a href="/donate"><h5>Donate</h5></a>
+                    <a href="/castpress/episodes"><h5>Episodes</h5></a>
+                    <a href="/castpress/blog"><h5>Blog</h5></a>
+                    <a href="/castpress/contact"><h5>Contact</h5></a>
+                    <a href="/castpress/donate"><h5>Donate</h5></a>
                 </nav>
                 <div className="email-form">
                     <h4 className="email-form__title">Newsletter</h4>
