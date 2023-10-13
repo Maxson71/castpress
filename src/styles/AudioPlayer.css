@@ -5,7 +5,6 @@
   justify-content: center;
   width: 100%;
   text-align: center;
-  padding-top: 96px;
 }
 .current-episode > * {
   margin-bottom: 39px;
@@ -85,10 +84,10 @@
 .current-episode .current-episode__link > a {
   font-size: 24px;
   color: #222222;
-  transition: color 0.5s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 .current-episode .current-episode__link > a:hover {
-  color: #3b3b3b;
+  color: #7247CA;
 }
 
 .audio-progress-bar__input,
@@ -172,12 +171,6 @@
 
 .volume-progress-bar__input::before {
   width: var(--progress-volume-width, 0);
-}
-
-@media (max-width: 767.98px) {
-  .current-episode {
-    padding: 48px 0;
-  }
 }
 
 /*# sourceMappingURL=AudioPlayer.css.map */

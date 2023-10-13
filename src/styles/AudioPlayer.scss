@@ -3,6 +3,7 @@ $dark_color: #222222;
 $dark_color_hover: #3b3b3b;
 $special_background_color: #F5F5F7;
 $background_color: #FFF;
+$special_color: #7247CA;
 
 .current-episode {
   display: flex;
@@ -11,7 +12,6 @@ $background_color: #FFF;
   justify-content: center;
   width: 100%;
   text-align: center;
-  padding-top: 96px;
   > * {
     margin-bottom: 39px;
   }
@@ -101,9 +101,9 @@ $background_color: #FFF;
       font-size: 24px;
 
       color: $dark_color;
-      transition: color 0.5s ease-in-out;
+      transition: color 0.2s ease-in-out;
       &:hover {
-        color: $dark_color_hover;
+        color: $special_color;
       }
     }
   }
@@ -186,10 +186,4 @@ $background_color: #FFF;
 }
 .volume-progress-bar__input::before {
   width: var(--progress-volume-width, 0);
-}
-
-@media (max-width: 767.98px) {
-  .current-episode {
-    padding: 48px 0;
-  }
 }

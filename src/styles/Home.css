@@ -1,11 +1,89 @@
-main {
+.home-page {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 64px;
   padding-top: 96px;
   padding-bottom: 64px;
+}
+.home-page .latest-posts {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 25px;
+}
+.home-page .latest-posts .img {
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+}
+.home-page .latest-posts .latest-posts__item > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 39px;
+  row-gap: 16px;
+  transition: all 0.2s ease-in-out;
+}
+.home-page .latest-posts .latest-posts__item > div .latest-posts__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 288px;
+}
+.home-page .latest-posts .latest-posts__item > div .latest-posts__info .latest-posts__date {
+  color: #979797;
+}
+.home-page .latest-posts .latest-posts__item > div .latest-posts__info .latest-posts__more {
+  margin-top: 23px;
+  font-weight: 600;
+  color: #7247CA;
+}
+@media (max-width: 538.98px) {
+  .home-page .latest-posts .latest-posts__item > div .latest-posts__info .latest-posts__more {
+    margin-top: 0;
+  }
+}
+.home-page .latest-posts .latest-posts__item > div:hover .latest-posts__more {
+  color: #a079ef;
+}
+.home-page .latest-posts .blog__button {
+  margin-top: 23px;
+  width: 106px;
+  height: 34px;
+  border-radius: 3px;
+  background-color: #F5F5F7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #7247CA;
+}
+.home-page .latest-posts .blog__button h5 {
+  color: #7247CA;
+}
+.home-page .latest-posts .blog__button h5 .simple-arrow {
+  font-size: 5px;
+  padding: 0 8px;
+}
+.home-page .latest-posts .blog__button, .home-page .latest-posts .blog__button h5, .home-page .latest-posts .blog__button .simple-arrow {
+  transition: all 0.2s ease-in-out;
+}
+.home-page .latest-posts .blog__button:hover {
+  background-color: #7247CA;
+  color: #F5F5F7;
+}
+.home-page .latest-posts .blog__button:hover h5 {
+  color: #F5F5F7;
+}
+
+@media (max-width: 767.98px) {
+  .home-page {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
 
 /*# sourceMappingURL=Home.css.map */
