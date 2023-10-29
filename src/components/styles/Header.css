@@ -27,6 +27,7 @@
 
 .menubar {
   display: flex;
+  align-items: center;
   flex: 1 0 auto;
   max-width: 436px;
   justify-content: space-between;
@@ -46,7 +47,7 @@
   display: inline-flex;
   align-items: center;
 }
-.menubar #episodes .simple-arrow {
+.menubar .episodes .simple-arrow {
   font-size: 5px;
   padding: 0 8px;
 }
@@ -56,7 +57,7 @@
   position: absolute;
   background-color: #FFF;
   border: 1px solid #EAEAEE;
-  transform: translateY(56px) translateX(-20px);
+  transform: translateY(109px) translateX(-20px);
   text-align: center;
   max-height: 120px;
   min-width: 120px;
@@ -73,16 +74,18 @@
 .menubar .episodes-menu a:hover {
   color: #818181;
 }
-.menubar #donate {
+.menubar .donate {
+  display: flex;
+  align-items: center;
   color: #7247CA;
 }
-.menubar #donate:hover {
+.menubar .donate:hover {
   color: #8e61e8;
 }
-.menubar #donate .icon-heart {
+.menubar .donate .icon-heart {
   padding: 0 8px;
 }
-.menubar #donate .icon-heart-fill {
+.menubar .donate .icon-heart-fill {
   padding: 0 8px;
 }
 

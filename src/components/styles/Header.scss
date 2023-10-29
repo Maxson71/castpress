@@ -39,6 +39,7 @@ $special_color_hover: #8e61e8;
 
 .menubar {
   display: flex;
+  align-items: center;
   flex: 1 0 auto;
   max-width: 436px;
   justify-content: space-between;
@@ -63,7 +64,7 @@ $special_color_hover: #8e61e8;
     }
   }
 
-  #episodes {
+  .episodes {
     .simple-arrow {
       font-size: 5px;
       padding: 0 8px;
@@ -77,7 +78,7 @@ $special_color_hover: #8e61e8;
     background-color: $background_color;
     border: 1px solid $decor_color;
 
-    transform: translateY(56px) translateX(-20px);
+    transform: translateY(109px) translateX(-20px);
 
     text-align: center;
     max-height: 120px;
@@ -98,7 +99,9 @@ $special_color_hover: #8e61e8;
     }
   }
 
-  #donate {
+  .donate {
+    display: flex;
+    align-items: center;
     color: $special_color;
 
     &:hover {

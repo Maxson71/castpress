@@ -1,0 +1,22 @@
+$dark_color: #222222;
+$dark_color_hover: #3b3b3b;
+$light_color: #979797;
+$light_color_hover: #d0d0d0;
+$special_background_color: #F5F5F7;
+$special_color: #7247CA;
+$special_color_hover: #a079ef;
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 64px;
+    padding-top: 96px;
+    padding-bottom: 64px;
+}
+
+@media (max-width: 767.98px) {
+    .home-page{
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}

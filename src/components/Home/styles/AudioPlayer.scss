@@ -30,9 +30,15 @@ $special_color: #7247CA;
     margin-bottom: 39px;
     min-width: 145px;
 
-    > h6 {
-      color: $color;
-      transform: translateY(8%)
+    .audio-time {
+      display: flex;
+      align-items: center;
+      text-align: justify;
+      > h6 {
+        color: $color;
+        transform: translateY(1px);
+        }
+
     }
 
     .audio-play-button {

@@ -1,0 +1,17 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 64px;
+  padding-top: 96px;
+  padding-bottom: 64px;
+}
+
+@media (max-width: 767.98px) {
+  .home-page {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+/*# sourceMappingURL=Home.css.map */

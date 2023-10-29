@@ -1,16 +1,17 @@
 import React, {useState, useRef, useEffect} from 'react';
 
-import '../styles/AudioPlayer.css';
+import './styles/AudioPlayer.css';
 
-const download__icon = `${process.env.PUBLIC_URL}/icons/download-icon.jpg`
-const play__icon = `${process.env.PUBLIC_URL}./icons/play-icon.jpg`
-const pause__icon = `${process.env.PUBLIC_URL}./icons/pause-icon.jpg`
-const volume__icon = `${process.env.PUBLIC_URL}./icons/volume-icon.jpg`
-const volume_off__icon = `${process.env.PUBLIC_URL}./icons/volume-off-icon.jpg`
+
+import download__icon from "../../assets/icons/download-icon.jpg"
+import play__icon from "../../assets/icons/play-icon.jpg"
+import pause__icon from "../../assets/icons/pause-icon.jpg"
+import volume__icon from "../../assets/icons/volume-icon.jpg"
+import volume_off__icon from "../../assets/icons/volume-off-icon.jpg"
+import current__image from "../../assets/img/current-episode.jpg"
+import current__audio from "../../assets/audio/file_example_MP3_5MG.mp3"
 
 const current__episode = "How to rapidly test any experience!"
-const current__image = `${process.env.PUBLIC_URL}./img/current-episode.jpg`
-const current__audio = `${process.env.PUBLIC_URL}./audio/file_example_MP3_5MG.mp3`
 
 function AudioPlayer() {
 
@@ -82,9 +83,13 @@ function AudioPlayer() {
             <h1 className="current-episode__title">{current__episode}</h1>
             <div className="current-episode__audio">
                 <div className="audio-play-button" onClick={playPauseHandler}>
-                    <img className="audio-button__image" src={isPlaying ? play__icon : pause__icon} alt="Play/Pause" />
+                    <img className="audio-button__image" src={isPlaying ? pause__icon : play__icon} alt="Play/Pause" />
                 </div>
-                <h6 className="audio-current-time">{formatTime(currentTime)}</h6>
+                <div className="audio-time">
+                    <h6 className="audio-time">
+                        {formatTime(currentTime)}
+                    </h6>
+                </div>
                 <div className="audio-progress-bar">
                     <input
                         className="audio-progress-bar__input"
@@ -100,7 +105,11 @@ function AudioPlayer() {
                         style={{ '--progress-audio-width': audioProgressBarWidth }}
                     />
                 </div>
-                <h6 className="audio-full-time">{formatTime(duration-currentTime)}</h6>
+                <div className="audio-time">
+                    <h6 className="audio-time">
+                        {formatTime(duration-currentTime)}
+                    </h6>
+                </div>
                 <div className="audio-volume-button" onClick={VolumeHandler}>
                     <img className="audio-button__image" src={(currentVolume == 0)? volume_off__icon : volume__icon} alt="Volume" />
                 </div>

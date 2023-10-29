@@ -22,9 +22,14 @@
   margin-bottom: 39px;
   min-width: 145px;
 }
-.current-episode .current-episode__audio > h6 {
+.current-episode .current-episode__audio .audio-time {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+.current-episode .current-episode__audio .audio-time > h6 {
   color: #555555;
-  transform: translateY(8%);
+  transform: translateY(1px);
 }
 .current-episode .current-episode__audio .audio-play-button {
   margin-right: 12px;
