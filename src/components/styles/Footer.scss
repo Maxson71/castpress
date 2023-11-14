@@ -1,14 +1,4 @@
-$background_color: #FFF;
-$dark_color: #222222;
-$dark_color_hover: #3b3b3b;
-$color: #555555;
-$color_hover: #818181;
-$decor_color: #EAEAEE;
-$special_background_color: #F5F5F7;
-$special_color: #7247CA;
-$special_color_hover: #8e61e8;
-
-
+@import "../../styles/colors.scss";
 
 .footer {
   display: flex;

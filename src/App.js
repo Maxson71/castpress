@@ -13,6 +13,7 @@ import Home from "./pages/Home";
 import Episode from "./pages/Episode";
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
+import Page404 from "./pages/Page404";
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                 <Route path={process.env.PUBLIC_URL + "/blog"} element={<Blog/>}/>
                 <Route path={process.env.PUBLIC_URL + "/contact"} element={<Contact/>}/>
                 <Route path={process.env.PUBLIC_URL + "/donate"} element={<Donate/>}/>
+                <Route path=":query" element={<Page404/>}/>
             </Routes>
             <Footer/>
         </>

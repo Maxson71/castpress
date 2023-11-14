@@ -6,7 +6,7 @@ import Team from "../components/Home/Team";
 
 function Home() {
     return (
-        <main className="home-page border">
+        <main className="home-page page border">
             <AudioPlayer/>
             <Team/>
             <LatestPost/>

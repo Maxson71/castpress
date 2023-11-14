@@ -1,14 +1,4 @@
-$color: #555555;
-$color_hover: #818181;
-$light_color: #979797;
-$light_color_hover: #d0d0d0;
-$dark_color: #222222;
-$dark_color_hover: #3b3b3b;
-$special_color: #7247CA;
-$special_color_hover: #a079ef;
-$background_color: #FFF;
-$special_background_color: #F5F5F7;
-$decor_color: #EAEAEE;
+@import "colors.scss";
 
 body {
   background: $background_color;
@@ -30,6 +20,91 @@ body {
     max-width: 712px;
     padding: 0 16px;
 }
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 64px;
+  padding-top: 96px;
+  padding-bottom: 64px;
+}
+
+@media (max-width: 767.98px) {
+  .page{
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: $special_color;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: $special_background_color;
+  cursor: pointer;
+
+  .button_text {
+    color: $special_background_color;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .simple-arrow {
+    font-size: 14px;
+  }
+
+  &, .button_text, .simple-arrow {
+    transition: all 0.2s ease-in-out;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  &:hover {
+    background-color: $special_background_color;
+    color: $special_color;
+    .button_text {
+      color: $special_color;
+    }
+    .simple-arrow {
+      color: $special_color;
+      transform: translateX(5px);
+    }
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.white_button {
+
+  background-color: $special_background_color;
+  color: $special_color;
+
+  .button_text {
+    color: $special_color;
+  }
+  &:hover {
+    background-color: $special_color;
+    color: $special_background_color;
+    .button_text {
+      color: $special_background_color;
+    }
+    .simple-arrow {
+      color: $special_background_color;
+    }
+  }
+}
+
 /*==================================================================*/
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,6 +138,11 @@ h6 {
   font-size: 12px;
   letter-spacing: 1.92px;
   text-transform: uppercase;
+}
+
+img {
+  object-fit: cover;
+  pointer-events: none;
 }
 
 /*==================================================================*/

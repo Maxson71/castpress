@@ -1,10 +1,4 @@
-$dark_color: #222222;
-$dark_color_hover: #3b3b3b;
-$light_color: #979797;
-$light_color_hover: #d0d0d0;
-$special_background_color: #F5F5F7;
-$special_color: #7247CA;
-$special_color_hover: #a079ef;
+@import "../../../styles/colors.scss";
 
 .latest-posts {
   display: flex;
@@ -50,8 +44,6 @@ $special_color_hover: #a079ef;
           }
         }
       }
-
-
       transition: all 0.2s ease-in-out;
       &:hover {
 
@@ -62,36 +54,10 @@ $special_color_hover: #a079ef;
     }
   }
 
-
   .blog__button {
     margin-top: 23px;
     width: 106px;
     height: 34px;
     border-radius: 3px;
-    background-color: $special_background_color;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: $special_color;
-
-    h5 {
-      color: $special_color;
-      .simple-arrow {
-        font-size: 5px;
-        padding: 0 8px;
-      }
-    }
-
-    &, h5, .simple-arrow {
-      transition: all 0.2s ease-in-out;
-    }
-    &:hover {
-      background-color: $special_color;
-      color: $special_background_color;
-      h5 {
-        color: $special_background_color;
-      }
-    }
   }
 }

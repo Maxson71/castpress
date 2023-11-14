@@ -1,9 +1,5 @@
-$color: #555555;
-$dark_color: #222222;
-$dark_color_hover: #3b3b3b;
-$special_background_color: #F5F5F7;
-$background_color: #FFF;
-$special_color: #7247CA;
+@import "../../../styles/colors.scss";
+
 
 .current-episode {
   display: flex;

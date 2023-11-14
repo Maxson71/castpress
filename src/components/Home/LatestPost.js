@@ -45,11 +45,11 @@ function LatestPost() {
                 title="Everything you need to know about mind mapping creation"
                 date={latest_post_date_2}
             />
-            <Link to={process.env.PUBLIC_URL+"/blog"} className="blog__button">
-                <h5>
+            <Link to={process.env.PUBLIC_URL+"/blog"} className="blog__button button white_button">
+                <div className="button_text">
                     View Blog
-                </h5>
-                <span className=" icon-simple-arrow-right"></span>
+                </div>
+                <span className="simple-arrow icon-simple-arrow-right"></span>
             </Link>
 
         </div>
