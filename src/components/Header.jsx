@@ -2,12 +2,12 @@ import './styles/Header.css';
 import {useState} from "react";
 import {Link} from "react-router-dom";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import {Scrollbar} from "swiper/modules";
 
 import 'swiper/css';
 import 'swiper/css/scrollbar';
-function Header() {
+const Header = () => {
 
     const [isHovered, setIsHovered] = useState(false);
 

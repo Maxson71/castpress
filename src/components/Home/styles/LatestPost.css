@@ -4,11 +4,6 @@
   text-align: start;
   gap: 25px;
 }
-.latest-posts .img {
-  width: 180px;
-  height: 180px;
-  border-radius: 4px;
-}
 .latest-posts .latest-posts__item > div {
   display: flex;
   flex-direction: row;
@@ -16,6 +11,11 @@
   column-gap: 39px;
   row-gap: 16px;
   transition: all 0.2s ease-in-out;
+}
+.latest-posts .latest-posts__item > div .latest-posts__img {
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
 }
 .latest-posts .latest-posts__item > div .latest-posts__info {
   display: flex;

@@ -4,14 +4,13 @@ import AudioPlayer from "../components/Home/AudioPlayer";
 import LatestPost from "../components/Home/LatestPost";
 import Team from "../components/Home/Team";
 
-function Home() {
+function Home(props) {
     return (
         <main className="home-page page border">
-            <AudioPlayer/>
-            <Team/>
-            <LatestPost/>
+            <AudioPlayer episodes={props.episodes}/>
+            <Team team={props.team}/>
+            <LatestPost blogs={props.blogs}/>
         </main>
     );
 }
-
 export default Home;

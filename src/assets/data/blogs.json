@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to React Hooks",
+    "date": "2023-01-15",
+    "author": "John Doe",
+    "img": "https://images.unsplash.com/photo-1653387141060-9a9834f47777?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8cmVhY3R8fHx8fHwxNzAwMDQ4NzQ1&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=800",
+    "content": [
+      {
+        "heading": "What are React Hooks?",
+        "text": "React Hooks are a new addition in React 16.8 lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos voluptatum. Quisquam, quos voluptatum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed mollis augue. Cras suscipit sit amet est in aliquam. In vel blandit nunc. Donec at dolor in orci tristique bibendum.ligula, sit amet imperdiet purus. Vestibulum quis leo nibh."
+
+      },
+      {
+        "heading": "How to Use useState Hook",
+        "text": "The useState hook is used to add statelorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos voluptatum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed mollis augue. Cras suscipit sit amet est in aliquam. In vel blandit nunc. Donec at dolor in orci tristique bibendum.ligula, sit amet imperdiet purus. Vestibulum quis leo nibh."
+      },
+      {
+        "heading": "Using useEffect Hook",
+        "text": "The useEffect hook is used for side effectslorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos voluptatum. Quisquam, quos voluptatum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed mollis augue. Cras suscipit sit amet est in aliquam. In vel blandit nunc."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Getting Started with Node.js",
+    "date": "2023-02-10",
+    "author": "Jane Smith",
+    "img": "https://images.unsplash.com/photo-1516031190212-da133013de50?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8bm9kZS5qc3x8fHx8fDE3MDAwNDg5ODg&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=800",
+    "content": [
+      {
+        "heading": "What is Node.js?",
+        "text": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript enginelorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos voluptatum. Quisquam, quos voluptatum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed mollis augue. Cras suscipit sit amet est in aliquam. In vel blandit nunc. ligula, sit amet imperdiet purus. Vestibulum quis leo nibh."
+      },
+      {
+        "heading": "Setting Up Your First Node.js Project",
+        "text": "To get started with Node.js, you need to install it lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos voluptatum. Quisquam, quos voluptatum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed mollis augue. Cras suscipit sit amet est in aliquam. In vel blandit nunc. Donec at dolor in orci tristique bibendum.ligula, sit amet imperdiet purus. Vestibulum quis leo nibh."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "CSS Grid Layout Basics",
+    "date": "2023-03-05",
+    "author": "Alex Johnson",
+    "img": "https://images.unsplash.com/photo-1472437774355-71ab6752b434?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8Y3NzfHx8fHx8MTcwMDA0ODk1NQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=800",
+    "content": [
+      {
+        "heading": "Understanding CSS Grid",
+        "text": "CSS Grid is a powerful layout system lorem ipsum dolor sit amet consectetur adipisicing elit."
+      },
+      {
+        "heading": "Grid Container and Items",
+        "text": "To use CSS Grid, you need a grid container lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos voluptatum. Quisquam, quos voluptatum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed mollis augue. Cras suscipit sit amet est in aliquam. In vel blandit nunc. Donec at dolor in orci tristique bibendum.ligula, sit amet imperdiet purus. Vestibulum quis leo nibh."
+      },
+      {
+        "heading": "Responsive Layouts with Grid",
+        "text": "Create responsive layouts easily using CSS Grid lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos voluptatum. Quisquam, quos voluptatum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed mollis augue. Cras suscipit sit amet est in aliquam. In vel blandit nunc. Donec at dolor in orci tristique bibendum.ligula, sit amet imperdiet purus. Vestibulum quis leo nibh."
+      }
+    ]
+  }
+]

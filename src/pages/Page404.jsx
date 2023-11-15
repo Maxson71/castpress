@@ -2,7 +2,7 @@ import React from 'react';
 import "./styles/Page404.css";
 import {Link} from "react-router-dom";
 
-function Page404() {
+const Page404 = () => {
     return (
         <div className="page404 page border">
             <div className="error404">

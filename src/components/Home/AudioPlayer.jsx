@@ -8,12 +8,8 @@ import play__icon from "../../assets/icons/play-icon.jpg"
 import pause__icon from "../../assets/icons/pause-icon.jpg"
 import volume__icon from "../../assets/icons/volume-icon.jpg"
 import volume_off__icon from "../../assets/icons/volume-off-icon.jpg"
-import current__image from "../../assets/img/current-episode.jpg"
-import current__audio from "../../assets/audio/file_example_MP3_5MG.mp3"
 
-const current__episode = "How to rapidly test any experience!"
-
-function AudioPlayer() {
+function AudioPlayer(props) {
 
     const [isPlaying, setIsPlaying] = useState(false);
     const [isOpenVolume, setIsOpenVolume] = useState(false);
@@ -23,6 +19,10 @@ function AudioPlayer() {
     const audioRef = useRef(null);
     let audioProgressBarWidth = `${(currentTime / duration) * 100}%`;
     let volumeProgressBarWidth = `${(currentVolume*100)}%`;
+
+    const current__episode = props.episodes[2].title;
+    const current__image = props.episodes[2].img;
+    const current__audio = props.episodes[2].audio;
 
     useEffect(() => {
         const onLoadedMetadata = () => {
@@ -73,13 +73,13 @@ function AudioPlayer() {
     const downloadAudioHandler = () => {
         const a = document.createElement('a');
         a.href = current__audio;
-        a.download = 'audio.mp3';
+        a.download = {current__episode}+".mp3";
         a.click();
     };
 
     return (
         <div className="current-episode">
-            <img src={current__image} alt="" className="current-episode__image"/>
+            <img src={current__image} alt={current__episode} className="current-episode__image"/>
             <h1 className="current-episode__title">{current__episode}</h1>
             <div className="current-episode__audio">
                 <div className="audio-play-button" onClick={playPauseHandler}>

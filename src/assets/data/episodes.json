@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Exploring the Universe of Jazz",
+    "author": "John Smith",
+    "img": "https://images.unsplash.com/photo-1521073693667-45e659e3ad27?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8amF6enx8fHx8fDE2OTk5ODc4OTA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600",
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+  },
+  {
+    "id": 2,
+    "title": "Mindful Meditation: Finding Inner Peace",
+    "author": "Alice Johnson",
+    "img": "https://images.unsplash.com/photo-1592895792095-85fa785192a9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8bWVkaXRhdGlvbnx8fHx8fDE2OTk5ODc5MTM&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600",
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+  },
+  {
+    "id": 3,
+    "title": "Tech Talks: Innovations in Artificial Intelligence",
+    "author": "Robert Williams",
+    "img": "https://images.unsplash.com/photo-1497215842964-222b430dc094?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8dGVjaG5vbG9neXx8fHx8fDE3MDAwNDQ4NDU&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600",
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+  },
+  {
+    "id": 4,
+    "title": "Cooking Adventures: Tasting the World",
+    "author": "Emily Davis",
+    "img": "https://images.unsplash.com/photo-1606787504667-961f789e78e6?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29va2luZ3x8fHx8fDE2OTk5ODc5MzU&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600",
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+  }
+]

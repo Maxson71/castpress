@@ -6,13 +6,8 @@
   text-align: start;
   gap: 25px;
 
-  .img {
-    width: 180px;
-    height: 180px;
-    border-radius: 4px;
-  }
-
   .latest-posts__item {
+
     > div {
       display: flex;
       flex-direction: row;
@@ -20,6 +15,11 @@
       column-gap: 39px;
       row-gap: 16px;
 
+      .latest-posts__img {
+        width: 180px;
+        height: 180px;
+        border-radius: 4px;
+      }
 
       .latest-posts__info {
         display: flex;

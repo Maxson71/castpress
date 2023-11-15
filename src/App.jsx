@@ -1,5 +1,3 @@
-import React from 'react';
-
 import './styles/reset.css';
 import './styles/style.css';
 import './styles/icons-font.css';
@@ -15,15 +13,19 @@ import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
 import Page404 from "./pages/Page404";
 
-function App() {
+import episodes from "./assets/data/episodes.json";
+import team from "./assets/data/team.json";
+import blogs from "./assets/data/blogs.json";
+
+const App = () => {
     return (
         <>
             <Header/>
             <Routes>
-                <Route path={process.env.PUBLIC_URL + "/"} element={<Home/>}/>
+                <Route path={process.env.PUBLIC_URL + "/"} element={<Home episodes={episodes} team={team} blogs={blogs}/>}/>
                 <Route path={process.env.PUBLIC_URL + "/episode"} element={<Episode/>}/>
-                <Route path={process.env.PUBLIC_URL + "/blog"} element={<Blog/>}/>
-                <Route path={process.env.PUBLIC_URL + "/contact"} element={<Contact/>}/>
+                <Route path={process.env.PUBLIC_URL + "/blog"} element={<Blog blogs={blogs}/>}/>
+                <Route path={process.env.PUBLIC_URL + "/contact"} element={<Contact team={team}/>}/>
                 <Route path={process.env.PUBLIC_URL + "/donate"} element={<Donate/>}/>
                 <Route path=":query" element={<Page404/>}/>
             </Routes>
