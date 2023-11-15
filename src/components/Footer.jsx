@@ -22,7 +22,12 @@ const Footer = () => {
                 </div>
             </div>
             <div className="privacy-policy">
-                <h5>PodcastTheme by VitaThemes | Privacy policy</h5>
+                <h5>
+                    {"PodcastTheme by "}
+                    <Link to={process.env.PUBLIC_URL+"/about"}>VitaThemes</Link>
+                    {" | "}
+                    <Link to={process.env.PUBLIC_URL+"/privacy-policy"}>Privacy policy</Link>
+                </h5>
             </div>
             <div className="social-link">
                 <a href="" className="icon-facebook"></a>

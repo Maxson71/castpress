@@ -3,11 +3,11 @@ import React, {useState, useRef, useEffect} from 'react';
 import './styles/AudioPlayer.css';
 
 
-import download__icon from "../../assets/icons/download-icon.jpg"
-import play__icon from "../../assets/icons/play-icon.jpg"
-import pause__icon from "../../assets/icons/pause-icon.jpg"
-import volume__icon from "../../assets/icons/volume-icon.jpg"
-import volume_off__icon from "../../assets/icons/volume-off-icon.jpg"
+import download__icon from "../assets/icons/download-icon.jpg"
+import play__icon from "../assets/icons/play-icon.jpg"
+import pause__icon from "../assets/icons/pause-icon.jpg"
+import volume__icon from "../assets/icons/volume-icon.jpg"
+import volume_off__icon from "../assets/icons/volume-off-icon.jpg"
 
 function AudioPlayer(props) {
 
@@ -25,8 +25,9 @@ function AudioPlayer(props) {
     const current__audio = props.episodes[2].audio;
 
     useEffect(() => {
-        const onLoadedMetadata = () => {
-            setDuration(audioRef.current.duration);
+        const onLoadedMetadata = (e) => {
+            setDuration(e.target.duration);
+            setCurrentTime(0);
         };
 
         if (audioRef.current) {
@@ -111,7 +112,7 @@ function AudioPlayer(props) {
                     </h6>
                 </div>
                 <div className="audio-volume-button" onClick={VolumeHandler}>
-                    <img className="audio-button__image" src={(currentVolume == 0)? volume_off__icon : volume__icon} alt="Volume" />
+                    <img className="audio-button__image" src={(currentVolume === 0)? volume_off__icon : volume__icon} alt="Volume" />
                 </div>
                 <div className={isOpenVolume ? "volume-progress-bar volume-open" : "volume-progress-bar volume-close" }>
                     <input
@@ -131,9 +132,9 @@ function AudioPlayer(props) {
             </div>
             <h6 className="current-episode__link-title">LISTEN ON</h6>
             <div className="current-episode__link">
-                <a href="https://open.spotify.com/" target="_blank" className="icon-spotify"></a>
-                <a href="https://soundcloud.com/" target="_blank" className="icon-soundcloud"></a>
-                <a href="https://music.apple.com/" target="_blank" className="icon-apple"></a>
+                <a href="https://open.spotify.com/" target="_blank" className="icon-spotify" rel="noreferrer"></a>
+                <a href="https://soundcloud.com/" target="_blank" className="icon-soundcloud" rel="noreferrer"></a>
+                <a href="https://music.apple.com/" target="_blank" className="icon-apple" rel="noreferrer"></a>
             </div>
             <audio
                 ref={audioRef}

@@ -11,6 +11,8 @@ import Home from "./pages/Home";
 import Episode from "./pages/Episode";
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import About from "./pages/About";
 import Page404 from "./pages/Page404";
 
 import episodes from "./assets/data/episodes.json";
@@ -27,6 +29,8 @@ const App = () => {
                 <Route path={process.env.PUBLIC_URL + "/blog"} element={<Blog blogs={blogs}/>}/>
                 <Route path={process.env.PUBLIC_URL + "/contact"} element={<Contact team={team}/>}/>
                 <Route path={process.env.PUBLIC_URL + "/donate"} element={<Donate/>}/>
+                <Route path={process.env.PUBLIC_URL + "/privacy-policy"} element={<PrivacyPolicy/>}/>
+                <Route path={process.env.PUBLIC_URL + "/about"} element={<About/>}/>
                 <Route path=":query" element={<Page404/>}/>
             </Routes>
             <Footer/>

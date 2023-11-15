@@ -105,6 +105,12 @@
 
   .privacy-policy {
     padding-bottom: 24px;
+     a {
+        transition: color 0.2s ease-in-out;
+        &:hover {
+            color: $color;
+        }
+    }
   }
 
   .social-link {
@@ -116,9 +122,9 @@
       font-size: 16px;
 
       color: $dark_color;
-      transition: color 0.5s ease-in-out;
+      transition: color 0.2s ease-in-out;
       &:hover {
-        color: $dark_color_hover;
+        color: $special_color
       }
     }
   }

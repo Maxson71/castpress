@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.about-page {
+  gap: 40px;
+}
+.about-page .about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.about-page .about__content .content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.about-page .about__content .content__list .list__item {
+  position: relative;
+  padding-left: 16px;
+}
+.about-page .about__content .content__list .list__item:before {
+  content: "•";
+  color: #555555;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: -6px;
+}
+
+/*# sourceMappingURL=About.css.map */

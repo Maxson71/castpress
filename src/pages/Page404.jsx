@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const Page404 = () => {
     return (
-        <div className="page404 page border">
+        <main className="page404 page border">
             <div className="error404">
                 <h1 className="error404__title">
                     404
@@ -23,7 +23,7 @@ const Page404 = () => {
                     <span className="simple-arrow icon-simple-arrow-right"></span>
                 </Link>
             </div>
-        </div>
+        </main>
     );
 }
 

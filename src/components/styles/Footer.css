@@ -89,6 +89,12 @@
 .footer .privacy-policy {
   padding-bottom: 24px;
 }
+.footer .privacy-policy a {
+  transition: color 0.2s ease-in-out;
+}
+.footer .privacy-policy a:hover {
+  color: #555555;
+}
 .footer .social-link {
   width: 94px;
   display: flex;
@@ -98,10 +104,10 @@
 .footer .social-link > a {
   font-size: 16px;
   color: #222222;
-  transition: color 0.5s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 .footer .social-link > a:hover {
-  color: #3b3b3b;
+  color: #7247CA;
 }
 
 /*# sourceMappingURL=Footer.css.map */
