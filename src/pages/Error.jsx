@@ -16,7 +16,7 @@ const Error = (props) => {
                     This {props.error} not found (deleted or never exists).<br/>
                     Try a phrase in search box or back to home and start again.
                 </h4>
-                <Link to={process.env.PUBLIC_URL+"/"} className="error404__button button">
+                <Link to={"/"} className="error404__button button">
                     <div className="button_text">
                         HOMEPAGE
                     </div>

@@ -23,14 +23,14 @@ const App = () => {
     return (
         <>
             <Header/>
-            <Routes basename={process.env.PUBLIC_URL}>
-                <Route path="/" element={<Home episodes={episodes} team={team} blogs={blogs} />} />
-                <Route path="/episode/:episodeId" element={<Episode episodes={episodes} />} />
-                <Route path="/blog" element={<Blog blogs={blogs} />} />
-                <Route path="/contact" element={<Contact team={team} />} />
-                <Route path="/donate" element={<Donate />} />
-                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-                <Route path="/about" element={<About team={team} />} />
+            <Routes>
+                <Route path="" element={<Home episodes={episodes} team={team} blogs={blogs} />} />
+                <Route path="episode/:episodeId" element={<Episode episodes={episodes} />} />
+                <Route path="blog" element={<Blog blogs={blogs} />} />
+                <Route path="contact" element={<Contact team={team} />} />
+                <Route path="donate" element={<Donate />} />
+                <Route path="privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="about" element={<About team={team} />} />
                 <Route path=":query" element={<Error error="page" />} />
             </Routes>
             <Footer/>

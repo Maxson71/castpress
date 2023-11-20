@@ -9,7 +9,7 @@ function formatDate(date) {
 
 const Post = (props) => {
     return (
-        <Link to={process.env.PUBLIC_URL+"/"} className="post__item">
+        <Link to={"/"} className="post__item">
             <div>
                 <img src={props.img} alt="" className="post__img"/>
                 <div className="post__info">
