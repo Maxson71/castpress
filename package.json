@@ -2,7 +2,7 @@
   "name": "castpress",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Maxson71.github.io/",
+  "homepage": "https://Maxson71.github.io/castpress/",
   "dependencies": {
     "@react-buddy/ide-toolbox": "^2.4.0",
     "@testing-library/jest-dom": "^5.17.0",
