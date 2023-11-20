@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.privacy-policy-page {
+  gap: 40px;
+}
+.privacy-policy-page .privacy-policy__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.privacy-policy-page .privacy-policy__content .content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.privacy-policy-page .privacy-policy__content .content__list .list__item {
+  position: relative;
+  padding-left: 16px;
+}
+.privacy-policy-page .privacy-policy__content .content__list .list__item:before {
+  content: "•";
+  color: #555555;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: -6px;
+}
+
+/*# sourceMappingURL=PrivacyPolicy.css.map */

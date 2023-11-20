@@ -20,7 +20,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    column-gap: 16px;
+    column-gap: 32px;
     row-gap: 32px;
     width: 100%;
     padding: 64px 0;
@@ -80,23 +80,11 @@
           }
         }
 
-        .email-form__button {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+        .submit__button {
           width: 36px;
           height: 36px;
-          border-radius: 4px;
-          background-color: $special_color;
-          color: $background_color;
-          font-size: 10px;
+          font-size: 8px;
           margin: 3px;
-          cursor: pointer;
-
-          transition: background-color 0.5s ease-in-out;
-          &:hover {
-              background-color: $special_color_hover;
-          }
         }
       }
     }
@@ -120,11 +108,21 @@
     justify-content: space-between;
     > a {
       font-size: 16px;
-
       color: $dark_color;
       transition: color 0.2s ease-in-out;
       &:hover {
         color: $special_color
+      }
+    }
+  }
+}
+
+@media (max-width: 435.98px) {
+  .footer {
+    .footer__content {
+      .footer__menu {
+        flex-direction: row;
+        gap: 36px;
       }
     }
   }

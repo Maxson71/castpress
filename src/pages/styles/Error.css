@@ -11,9 +11,12 @@
 .page404 .error404 .error404__title {
   font-size: 144px;
 }
+.page404 .error404 .error404__subtitle {
+  text-transform: capitalize;
+}
 .page404 .error404 .error404__button {
   height: 40px;
   width: 133px;
 }
 
-/*# sourceMappingURL=Page404.css.map */
+/*# sourceMappingURL=Error.css.map */

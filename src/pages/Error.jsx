@@ -1,8 +1,8 @@
 import React from 'react';
-import "./styles/Page404.css";
+import "./styles/Error.css";
 import {Link} from "react-router-dom";
 
-const Page404 = () => {
+const Error = (props) => {
     return (
         <main className="page404 page border">
             <div className="error404">
@@ -10,10 +10,10 @@ const Page404 = () => {
                     404
                 </h1>
                 <h1 className="error404__subtitle">
-                    Page not found
+                    {props.error} not found
                 </h1>
                 <h4 className="error404__description">
-                    This page not found (deleted or never exists).<br/>
+                    This {props.error} not found (deleted or never exists).<br/>
                     Try a phrase in search box or back to home and start again.
                 </h4>
                 <Link to={process.env.PUBLIC_URL+"/"} className="error404__button button">
@@ -27,4 +27,4 @@ const Page404 = () => {
     );
 }
 
-export default Page404;
+export default Error;

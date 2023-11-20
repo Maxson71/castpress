@@ -41,11 +41,11 @@ const Header = () => {
                                 mousewheel={{ invert: false , forceToAxis: true }}
                                 freeMode={true}
                         >
-                            <SwiperSlide><Link to="/castpress/episode&1">Episode 1</Link></SwiperSlide>
-                            <SwiperSlide><Link to="/castpress/episode&2">Episode 2</Link></SwiperSlide>
-                            <SwiperSlide><Link to="/castpress/episode&3">Episode 3</Link></SwiperSlide>
-                            <SwiperSlide><Link to="/castpress/episode&4">Episode 4</Link></SwiperSlide>
-                            <SwiperSlide><Link to="/castpress/episode&5">Episode 5</Link></SwiperSlide>
+                            <SwiperSlide><Link to="/episode/1">Episode 1</Link></SwiperSlide>
+                            <SwiperSlide><Link to="/episode/2">Episode 2</Link></SwiperSlide>
+                            <SwiperSlide><Link to="/episode/3">Episode 3</Link></SwiperSlide>
+                            <SwiperSlide><Link to="/episode/4">Episode 4</Link></SwiperSlide>
+                            <SwiperSlide><Link to="/episode/5">Episode 5</Link></SwiperSlide>
 
                         </Swiper>
                     )}

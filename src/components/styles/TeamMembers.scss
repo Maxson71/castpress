@@ -1,0 +1,68 @@
+@import "../../styles/colors";
+
+.team {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  .team__members {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+
+    .team__member {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      column-gap: 40px;
+      row-gap: 16px;
+
+      .team__member__img {
+        width: 300px;
+        height: 300px;
+        border-radius: 4px;
+      }
+
+      .team__member__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 340px;
+        gap: 16px;
+
+        .info__more {
+          display: flex;
+          flex-direction: column;
+          row-gap: 8px;
+          .info__title {
+            color: $special_color;
+          }
+          .info__name {
+            font-weight: 600;
+            color: $dark_color;
+          }
+          .info__description {
+            font-size: 18px;
+            margin: 8px 0;
+          }
+          .info__social {
+            display: flex;
+            flex-direction: row;
+            column-gap: 12px;
+
+            .info__social__icon {
+              font-size: 12px;
+              color: $color;
+
+              transition: all 0.2s ease-in-out;
+              &:hover {
+                color: $special_color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

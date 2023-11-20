@@ -1,9 +1,27 @@
 import React from 'react';
+import {Route, useParams} from "react-router-dom";
 
-export const Episode = () => {
-    return (
-        <h1>Episode</h1>
-    );
+import './styles/Episode.css';
+import AudioPlayer from "../components/AudioPlayer";
+import Error from "./Error";
+
+export const Episode = (props) => {
+    const { episodeId } = useParams();
+
+    const currentEpisode = props.episodes.find(episode => episode.id.toString() === episodeId);
+
+    if (!currentEpisode) {
+        return (
+            <Error error={"episode"}/>
+        );
+    }
+    else {
+        return (
+            <main className="episode-page page border">
+                <AudioPlayer currentEpisode={currentEpisode}></AudioPlayer>
+            </main>
+        );
+    }
 }
 
 export default Episode;

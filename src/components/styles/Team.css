@@ -3,24 +3,25 @@
   flex-direction: column;
   gap: 25px;
 }
-.team .team__members {
+.team .team__developers {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 32px;
   justify-content: space-between;
 }
-.team .team__members .team__member {
+.team .team__developers .team__developer {
   max-width: 300px;
   border-radius: 10px 10px 4px 4px;
   background: #F5F5F7;
 }
-.team .team__members .team__member .team__member__img {
-  width: 100%;
+.team .team__developers .team__developer .developer__img {
+  width: 300px;
   height: 300px;
   border-radius: 10px 10px 0 0;
 }
-.team .team__members .team__member .team__member__info {
+.team .team__developers .team__developer .developer__info {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -28,29 +29,29 @@
   height: calc(100% - 300px);
   gap: 16px;
 }
-.team .team__members .team__member .team__member__info .team__member__more {
+.team .team__developers .team__developer .developer__info .info__more {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
 }
-.team .team__members .team__member .team__member__info .team__member__more .team__member__title {
+.team .team__developers .team__developer .developer__info .info__more .info__title {
   color: #7247CA;
 }
-.team .team__members .team__member .team__member__info .team__member__more .team__member__name {
+.team .team__developers .team__developer .developer__info .info__more .info__name {
   font-weight: 600;
   color: #222222;
 }
-.team .team__members .team__member .team__member__info .team__member__social {
+.team .team__developers .team__developer .developer__info .info__social {
   display: flex;
   flex-direction: row;
   column-gap: 12px;
 }
-.team .team__members .team__member .team__member__info .team__member__social .team__member__social__icon {
+.team .team__developers .team__developer .developer__info .info__social .social__icon {
   font-size: 12px;
   color: #555555;
   transition: all 0.2s ease-in-out;
 }
-.team .team__members .team__member .team__member__info .team__member__social .team__member__social__icon:hover {
+.team .team__developers .team__developer .developer__info .info__social .social__icon:hover {
   color: #7247CA;
 }
 

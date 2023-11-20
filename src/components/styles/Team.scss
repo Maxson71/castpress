@@ -5,25 +5,26 @@
   flex-direction: column;
   gap: 25px;
 
-  .team__members {
+  .team__developers {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 32px;
     justify-content: space-between;
 
-    .team__member {
+    .team__developer {
       max-width: 300px;
       border-radius: 10px 10px 4px 4px;
       background: $special_background_color;
 
-      .team__member__img {
-        width: 100%;
+      .developer__img {
+        width: 300px;
         height: 300px;
         border-radius: 10px 10px 0 0;
       }
 
-      .team__member__info {
+      .developer__info {
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -31,24 +32,24 @@
         height: calc(100% - 300px);
         gap: 16px;
 
-        .team__member__more {
+        .info__more {
           display: flex;
           flex-direction: column;
           row-gap: 8px;
-          .team__member__title {
+          .info__title {
             color: $special_color;
           }
-          .team__member__name {
+          .info__name {
             font-weight: 600;
             color: $dark_color;
           }
         }
-        .team__member__social {
+        .info__social {
           display: flex;
           flex-direction: row;
           column-gap: 12px;
 
-          .team__member__social__icon {
+          .social__icon {
             font-size: 12px;
             color: $color;
 

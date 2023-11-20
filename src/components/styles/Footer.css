@@ -17,7 +17,7 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  column-gap: 16px;
+  column-gap: 32px;
   row-gap: 32px;
   width: 100%;
   padding: 64px 0;
@@ -69,22 +69,11 @@
 .footer .footer__content .email-form .email-form__form > input[type=email]:focus {
   outline: none;
 }
-.footer .footer__content .email-form .email-form__form .email-form__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.footer .footer__content .email-form .email-form__form .submit__button {
   width: 36px;
   height: 36px;
-  border-radius: 4px;
-  background-color: #7247CA;
-  color: #FFF;
-  font-size: 10px;
+  font-size: 8px;
   margin: 3px;
-  cursor: pointer;
-  transition: background-color 0.5s ease-in-out;
-}
-.footer .footer__content .email-form .email-form__form .email-form__button:hover {
-  background-color: #a079ef;
 }
 .footer .privacy-policy {
   padding-bottom: 24px;
@@ -108,6 +97,13 @@
 }
 .footer .social-link > a:hover {
   color: #7247CA;
+}
+
+@media (max-width: 435.98px) {
+  .footer .footer__content .footer__menu {
+    flex-direction: row;
+    gap: 36px;
+  }
 }
 
 /*# sourceMappingURL=Footer.css.map */

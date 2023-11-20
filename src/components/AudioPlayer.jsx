@@ -20,9 +20,9 @@ function AudioPlayer(props) {
     let audioProgressBarWidth = `${(currentTime / duration) * 100}%`;
     let volumeProgressBarWidth = `${(currentVolume*100)}%`;
 
-    const current__episode = props.episodes[2].title;
-    const current__image = props.episodes[2].img;
-    const current__audio = props.episodes[2].audio;
+    const current__episode = props.currentEpisode.title;
+    const current__image = props.currentEpisode.img;
+    const current__audio = props.currentEpisode.audio;
 
     useEffect(() => {
         const onLoadedMetadata = (e) => {
@@ -74,7 +74,7 @@ function AudioPlayer(props) {
     const downloadAudioHandler = () => {
         const a = document.createElement('a');
         a.href = current__audio;
-        a.download = {current__episode}+".mp3";
+        a.download = `${current__episode}.mp3`;
         a.click();
     };
 

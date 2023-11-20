@@ -1,7 +1,13 @@
 import './styles/Footer.css';
 import {Link} from "react-router-dom";
+import React from "react";
 
 const Footer = () => {
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+    };
+
     return (
         <footer className="footer border">
             <span className="decor"></span>
@@ -15,10 +21,12 @@ const Footer = () => {
                 <div className="email-form">
                     <h4 className="email-form__title">Newsletter</h4>
                     <h5  className="email-form__description">Sign up now; get closer to our action.</h5>
-                    <div className="email-form__form">
+                    <form action="" className="email-form__form">
                         <input type="email" placeholder="Email  adress..." />
-                        <div className="email-form__button icon-arrow-right"></div>
-                    </div>
+                            <button type="submit" className="submit__button button">
+                                <span className="simple-arrow icon-arrow-right"></span>
+                            </button>
+                    </form>
                 </div>
             </div>
             <div className="privacy-policy">

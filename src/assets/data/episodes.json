@@ -3,6 +3,8 @@
     "id": 1,
     "title": "Exploring the Universe of Jazz",
     "author": "John Smith",
+    "date": "2021-07-01",
+    "episode-number": 1,
     "img": "https://images.unsplash.com/photo-1521073693667-45e659e3ad27?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8amF6enx8fHx8fDE2OTk5ODc4OTA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600",
     "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
   },

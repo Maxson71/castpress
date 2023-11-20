@@ -1,0 +1,61 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.team .team__members {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+}
+.team .team__members .team__member {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 16px;
+}
+.team .team__members .team__member .team__member__img {
+  width: 300px;
+  height: 300px;
+  border-radius: 4px;
+}
+.team .team__members .team__member .team__member__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 340px;
+  gap: 16px;
+}
+.team .team__members .team__member .team__member__info .info__more {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.team .team__members .team__member .team__member__info .info__more .info__title {
+  color: #7247CA;
+}
+.team .team__members .team__member .team__member__info .info__more .info__name {
+  font-weight: 600;
+  color: #222222;
+}
+.team .team__members .team__member .team__member__info .info__more .info__description {
+  font-size: 18px;
+  margin: 8px 0;
+}
+.team .team__members .team__member .team__member__info .info__more .info__social {
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+}
+.team .team__members .team__member .team__member__info .info__more .info__social .info__social__icon {
+  font-size: 12px;
+  color: #555555;
+  transition: all 0.2s ease-in-out;
+}
+.team .team__members .team__member .team__member__info .info__more .info__social .info__social__icon:hover {
+  color: #7247CA;
+}
+
+/*# sourceMappingURL=TeamMembers.css.map */

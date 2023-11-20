@@ -13,7 +13,7 @@ import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import About from "./pages/About";
-import Page404 from "./pages/Page404";
+import Error from "./pages/Error";
 
 import episodes from "./assets/data/episodes.json";
 import team from "./assets/data/team.json";
@@ -25,13 +25,13 @@ const App = () => {
             <Header/>
             <Routes>
                 <Route path={process.env.PUBLIC_URL + "/"} element={<Home episodes={episodes} team={team} blogs={blogs}/>}/>
-                <Route path={process.env.PUBLIC_URL + "/episode"} element={<Episode/>}/>
+                <Route path={process.env.PUBLIC_URL + "/episode/:episodeId"} element={<Episode episodes={episodes}/>}/>
                 <Route path={process.env.PUBLIC_URL + "/blog"} element={<Blog blogs={blogs}/>}/>
                 <Route path={process.env.PUBLIC_URL + "/contact"} element={<Contact team={team}/>}/>
                 <Route path={process.env.PUBLIC_URL + "/donate"} element={<Donate/>}/>
                 <Route path={process.env.PUBLIC_URL + "/privacy-policy"} element={<PrivacyPolicy/>}/>
-                <Route path={process.env.PUBLIC_URL + "/about"} element={<About/>}/>
-                <Route path=":query" element={<Page404/>}/>
+                <Route path={process.env.PUBLIC_URL + "/about"} element={<About team={team}/>}/>
+                <Route path=":query" element={<Error error={"page"}/>}/>
             </Routes>
             <Footer/>
         </>

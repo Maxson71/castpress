@@ -97,6 +97,9 @@
 }
 
 @media (max-width: 639.98px) {
+  .header-border {
+    min-height: 76px;
+  }
   .menubar {
     display: none;
   }
