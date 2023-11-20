@@ -23,15 +23,15 @@ const App = () => {
     return (
         <>
             <Header/>
-            <Routes>
-                <Route path={process.env.PUBLIC_URL + "/"} element={<Home episodes={episodes} team={team} blogs={blogs}/>}/>
-                <Route path={process.env.PUBLIC_URL + "/episode/:episodeId"} element={<Episode episodes={episodes}/>}/>
-                <Route path={process.env.PUBLIC_URL + "/blog"} element={<Blog blogs={blogs}/>}/>
-                <Route path={process.env.PUBLIC_URL + "/contact"} element={<Contact team={team}/>}/>
-                <Route path={process.env.PUBLIC_URL + "/donate"} element={<Donate/>}/>
-                <Route path={process.env.PUBLIC_URL + "/privacy-policy"} element={<PrivacyPolicy/>}/>
-                <Route path={process.env.PUBLIC_URL + "/about"} element={<About team={team}/>}/>
-                <Route path=":query" element={<Error error={"page"}/>}/>
+            <Routes basename={process.env.PUBLIC_URL}>
+                <Route path="/" element={<Home episodes={episodes} team={team} blogs={blogs} />} />
+                <Route path="/episode/:episodeId" element={<Episode episodes={episodes} />} />
+                <Route path="/blog" element={<Blog blogs={blogs} />} />
+                <Route path="/contact" element={<Contact team={team} />} />
+                <Route path="/donate" element={<Donate />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/about" element={<About team={team} />} />
+                <Route path=":query" element={<Error error="page" />} />
             </Routes>
             <Footer/>
         </>
