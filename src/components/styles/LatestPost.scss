@@ -6,54 +6,6 @@
   text-align: start;
   gap: 25px;
 
-  .latest-posts__item {
-
-    > div {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      column-gap: 39px;
-      row-gap: 16px;
-
-      .latest-posts__img {
-        width: 180px;
-        height: 180px;
-        border-radius: 4px;
-      }
-
-      .latest-posts__info {
-        display: flex;
-        flex-direction: column;
-        row-gap: 16px;
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 288px;
-
-        .latest-posts__date {
-          color: $light_color;
-        }
-
-        .latest-posts__more{
-          margin-top: 23px;
-          font-weight: 600;
-          color: $special_color;
-        }
-        @media (max-width: 538.98px) {
-          .latest-posts__more{
-            margin-top: 0;
-          }
-        }
-      }
-      transition: all 0.2s ease-in-out;
-      &:hover {
-
-        .latest-posts__more {
-          color: $special_color_hover;
-        }
-      }
-    }
-  }
-
   .blog__button {
     margin-top: 23px;
     width: 106px;

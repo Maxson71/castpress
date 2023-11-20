@@ -1,27 +1,7 @@
 import {Link} from "react-router-dom";
 import React from "react";
 import './styles/LatestPost.css';
-
-function formatDate(date) {
-    const options = { year: 'numeric', month: 'short', day: 'numeric' };
-    return date.toLocaleDateString('en-US', options);
-}
-
-function Post(props) {
-    return (
-        <Link to={process.env.PUBLIC_URL+"/"} className="latest-posts__item">
-            <div>
-                <img src={props.img} alt="" className="latest-posts__img"/>
-                <div className="latest-posts__info">
-                    <h2 className="latest-posts__title">{props.title}</h2>
-                    <h5 className="latest-posts__date">{formatDate(new Date(props.date))}</h5>
-                    <h5 className="latest-posts__more">Read More</h5>
-                </div>
-            </div>
-        </Link>
-    );
-}
-
+import Post from "./Post";
 
 const LatestPost = (props) => {
     return (

@@ -1,0 +1,39 @@
+.post__item > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 39px;
+  row-gap: 16px;
+  transition: all 0.2s ease-in-out;
+}
+.post__item > div .post__img {
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+}
+.post__item > div .post__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 288px;
+}
+.post__item > div .post__info .post__date {
+  color: #979797;
+}
+.post__item > div .post__info .post__more {
+  margin-top: 23px;
+  font-weight: 600;
+  color: #7247CA;
+}
+@media (max-width: 538.98px) {
+  .post__item > div .post__info .post__more {
+    margin-top: 0;
+  }
+}
+.post__item > div:hover .post__more {
+  color: #a079ef;
+}
+
+/*# sourceMappingURL=Post.css.map */

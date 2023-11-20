@@ -1,0 +1,49 @@
+@import "../../styles/colors";
+
+.post__item {
+
+  > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 39px;
+    row-gap: 16px;
+
+    .post__img {
+      width: 180px;
+      height: 180px;
+      border-radius: 4px;
+    }
+
+    .post__info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 288px;
+
+      .post__date {
+        color: $light_color;
+      }
+
+      .post__more{
+        margin-top: 23px;
+        font-weight: 600;
+        color: $special_color;
+      }
+      @media (max-width: 538.98px) {
+        .post__more{
+          margin-top: 0;
+        }
+      }
+    }
+    transition: all 0.2s ease-in-out;
+    &:hover {
+
+      .post__more {
+        color: $special_color_hover;
+      }
+    }
+  }
+}

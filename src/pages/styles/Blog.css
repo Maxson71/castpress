@@ -1,0 +1,26 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.blog .blog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.blog .pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.blog .pagination .pagination_button {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background: #F5F5F7;
+}
+.blog .pagination .pagination_button .number {
+  color: #555555;
+}
+
+/*# sourceMappingURL=Blog.css.map */
