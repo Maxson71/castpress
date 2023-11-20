@@ -24,6 +24,13 @@ function AudioPlayer(props) {
     const current__image = props.currentEpisode.img;
     const current__audio = props.currentEpisode.audio;
 
+    function formatDate(date) {
+        const options = { year: 'numeric', month: 'short', day: 'numeric' };
+        return date.toLocaleDateString('en-US', options);
+    }
+
+    const current__description = "Episode " + props.currentEpisode.id + "  |  " + formatDate(new Date(props.currentEpisode.date)) + "  |  By " + props.currentEpisode.author;
+
     useEffect(() => {
         const onLoadedMetadata = (e) => {
             setDuration(e.target.duration);
@@ -82,6 +89,9 @@ function AudioPlayer(props) {
         <div className="current-episode">
             <img src={current__image} alt={current__episode} className="current-episode__image"/>
             <h1 className="current-episode__title">{current__episode}</h1>
+            <h5 className="current-episode__description">
+                <pre>{current__description}</pre>
+            </h5>
             <div className="current-episode__audio">
                 <div className="audio-play-button" onClick={playPauseHandler}>
                     <img className="audio-button__image" src={isPlaying ? pause__icon : play__icon} alt="Play/Pause" />

@@ -7,12 +7,21 @@
   text-align: center;
 }
 .current-episode > * {
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 }
 .current-episode .current-episode__image {
   width: 180px;
   height: 180px;
   border-radius: 4px;
+}
+.current-episode .current-episode__title {
+  margin-bottom: 16px;
+}
+.current-episode .current-episode__description {
+  color: #979797;
+}
+.current-episode .current-episode__description pre {
+  font-family: "Source Serif Pro", serif;
 }
 .current-episode .current-episode__audio {
   display: flex;

@@ -1,5 +1,10 @@
 @import "../../styles/colors";
+.episode-page{
+  gap: 24px;
+}
 
-.episode__error {
-
+.episode-page__paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }

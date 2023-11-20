@@ -1,3 +1,11 @@
+.episode-page {
+  gap: 24px;
+}
 
+.episode-page__paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
 /*# sourceMappingURL=Episode.css.map */

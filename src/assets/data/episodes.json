@@ -4,29 +4,85 @@
     "title": "Exploring the Universe of Jazz",
     "author": "John Smith",
     "date": "2021-07-01",
-    "episode-number": 1,
     "img": "https://images.unsplash.com/photo-1521073693667-45e659e3ad27?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8amF6enx8fHx8fDE2OTk5ODc4OTA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    "content": [
+      {
+        "heading": "Exploring the World of Jazz",
+        "text": "In this episode, we delve into the essential aspects of the jazz universe and its impact on musical culture."
+      },
+      {
+        "heading": "Genre History",
+        "text": "Let's immerse ourselves in the history of jazz and explore key moments that shaped this unique musical genre."
+      },
+      {
+        "heading": "Current Trends",
+        "text": "Discover the latest news and trends in the contemporary jazz scene, and learn about the artists shaping its future."
+      }
+    ]
   },
   {
     "id": 2,
     "title": "Mindful Meditation: Finding Inner Peace",
     "author": "Alice Johnson",
+    "date": "2022-09-11",
     "img": "https://images.unsplash.com/photo-1592895792095-85fa785192a9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8bWVkaXRhdGlvbnx8fHx8fDE2OTk5ODc5MTM&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+    "content": [
+      {
+        "text": "Join us in exploring the practice of mindful meditation and its transformative power in finding inner peace."
+      },
+      {
+        "heading": "Guided Meditation Session",
+        "text": "Experience a guided meditation session designed to help you relax, focus, and achieve a state of tranquility."
+      },
+      {
+        "heading": "Benefits for Well-being",
+        "text": "Learn about the various benefits of mindful meditation for mental and emotional well-being, backed by scientific research."
+      }
+    ]
   },
   {
     "id": 3,
     "title": "Tech Talks: Innovations in Artificial Intelligence",
     "author": "Robert Williams",
+    "date": "2023-03-08",
     "img": "https://images.unsplash.com/photo-1497215842964-222b430dc094?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8dGVjaG5vbG9neXx8fHx8fDE3MDAwNDQ4NDU&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+    "content": [
+      {
+        "heading": "Advancements in AI",
+        "text": "Join our tech talk as we explore the latest innovations in artificial intelligence, from machine learning to neural networks."
+      },
+      {
+        "heading": "Real-world Applications",
+        "text": "Discover how AI is making an impact in various industries, from healthcare to finance, and its role in shaping the future."
+      },
+      {
+        "heading": "Ethical Considerations",
+        "text": "Discuss the ethical considerations and challenges associated with the rapid advancements in artificial intelligence."
+      }
+    ]
   },
   {
     "id": 4,
     "title": "Cooking Adventures: Tasting the World",
     "author": "Emily Davis",
+    "date": "2022-12-02",
     "img": "https://images.unsplash.com/photo-1606787504667-961f789e78e6?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29va2luZ3x8fHx8fDE2OTk5ODc5MzU&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+    "content": [
+      {
+        "text": "Embark on a culinary journey with Emily Davis as she explores diverse cuisines from around the world."
+      },
+      {
+        "heading": "Tasting Experiences",
+        "text": "Indulge in delightful tasting experiences as Emily shares her adventures in discovering unique flavors and ingredients."
+      },
+      {
+        "heading": "Cooking Tips and Tricks",
+        "text": "Learn valuable cooking tips and tricks from a seasoned chef, and elevate your culinary skills in the kitchen."
+      }
+    ]
   }
 ]
