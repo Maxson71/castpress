@@ -2,12 +2,11 @@ import React, {useState, useRef, useEffect} from 'react';
 
 import './styles/AudioPlayer.css';
 
-
-import download__icon from "../assets/icons/download-icon.jpg"
-import play__icon from "../assets/icons/play-icon.jpg"
-import pause__icon from "../assets/icons/pause-icon.jpg"
-import volume__icon from "../assets/icons/volume-icon.jpg"
-import volume_off__icon from "../assets/icons/volume-off-icon.jpg"
+import download__icon from "./../assets/icons/download-icon.jpg"
+import play__icon from "./../assets/icons/play-icon.jpg"
+import pause__icon from "./../assets/icons/pause-icon.jpg"
+import volume__icon from "./../assets/icons/volume-icon.jpg"
+import volume_off__icon from "./../assets/icons/volume-off-icon.jpg"
 
 function AudioPlayer(props) {
 

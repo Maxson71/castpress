@@ -18,9 +18,27 @@
   height: 30px;
   border-radius: 4px;
   background: #F5F5F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .blog .pagination .pagination_button .number {
   color: #555555;
+}
+.blog .pagination .pagination_button .arrow_button {
+  color: #555555;
+}
+.blog .pagination .pagination_button:hover {
+  background: #d0d0d0;
+}
+.blog .pagination .active {
+  background: #7247CA;
+}
+.blog .pagination .active .number {
+  color: #F5F5F7;
+}
+.blog .pagination .active:hover {
+  background: #a079ef;
 }
 
 /*# sourceMappingURL=Blog.css.map */

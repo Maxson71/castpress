@@ -18,8 +18,28 @@
       height: 30px;
       border-radius: 4px;
       background: $special_background_color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .number {
         color: $color;
+      }
+      .arrow_button {
+        color: $color;
+      }
+
+      &:hover {
+        background: $light_color_hover;
+      }
+    }
+    .active {
+      background: $special_color;
+      .number {
+        color: $special_background_color;
+      }
+
+      &:hover {
+        background: $special_color_hover;
       }
     }
   }
